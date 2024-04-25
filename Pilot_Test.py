@@ -383,8 +383,8 @@ def reset_navigation_state():
 st.sidebar.title("Human-Agent Team (HAT)")
 menu_items = {
     "👤 User Only": user_page,
-    "👤🤖 User-AI Interaction": user_agent_page,
     "👤💼 User-Consultant Interaction": user_consultant_page,
+    "👤🤖 User-AI Interaction": user_agent_page,
     "🤝 User-AI-Consultant Interaction": user_agent_consultant_page
 }
 
