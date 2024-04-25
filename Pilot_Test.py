@@ -24,6 +24,7 @@ def set_custom_css():
 # Apply the custom CSS as soon as possible in your app's execution
 set_custom_css()
 
+st.title("Optimising Irrigation Practices for Dairy Farms: A Decision-Making Guide")
 
 questions = {
     "Q1": "What is the primary consideration for starting spring irrigation on a dairy farm?",
@@ -158,6 +159,7 @@ if 'current_question' not in st.session_state:
     st.session_state['user_responses'] = {}
     st.session_state['selected_option'] = None
     st.session_state['total_score'] = 0  # Initialize score
+    st.session_state['path_length'] = 0
 
 
 def navigate_questions():
@@ -190,6 +192,7 @@ def navigate_questions():
     # Update responses and score
     st.session_state['user_responses'][st.session_state['current_question']] = option_selected
     st.session_state['total_score'] += score_change  # Update score
+    st.session_state['path_length'] += 1  # Increment path length by 1 for each navigation
 
     # Check if it's an endpoint
     if next_q is None:
@@ -225,8 +228,9 @@ def user_page():
     if st.session_state.get('endpoint_reached', False):
         # Display the final score in a bold format
         st.markdown(f"**You've reached the end of the survey with a final score of: {st.session_state['total_score']}**")
+        st.markdown(
+            f"**You've reached the end of the survey with a total path length of: {st.session_state['path_length']}**")
 
-st.title("Optimising Irrigation Practices for Dairy Farms: A Decision-Making Guide")
 
 def user_agent_page():
     st.write("This page is for interaction between the user and an AI agent.")
@@ -256,6 +260,8 @@ def user_agent_page():
         # Display the final score in a bold format
         st.markdown(
             f"**You've reached the end of the survey with a final score of: {st.session_state['total_score']}**")
+        st.markdown(
+            f"**You've reached the end of the survey with a total path length of: {st.session_state['path_length']}**")
 
 
 def initialize_consultant_availability(questions, percentage=0.8):
@@ -294,6 +300,8 @@ def user_consultant_page():
     if st.session_state.get('endpoint_reached', False):
         st.markdown(
             f"**You've reached the end of the survey with a final score of: {st.session_state['total_score']}**")
+        st.markdown(
+            f"**You've reached the end of the survey with a total path length of: {st.session_state['path_length']}**")
 
 
 def user_agent_consultant_page():
@@ -322,8 +330,6 @@ def user_agent_consultant_page():
             recommended_option = options[current_question][max_score_option][0]
             st.write(f"AI recommends: {recommended_option}")
 
-
-
         if selected:
             st.session_state['selected_option'] = selected[1]
 
@@ -333,6 +339,9 @@ def user_agent_consultant_page():
     if st.session_state.get('endpoint_reached', False):
         # Display the final score in a bold format
         st.markdown(f"**You've reached the end of the survey with a final score of: {st.session_state['total_score']}**")
+        st.markdown(
+            f"**You've reached the end of the survey with a total path length of: {st.session_state['path_length']}**")
+
 
 
 # Initialize session state for page navigation if it's not already set
@@ -365,6 +374,7 @@ ensure_session_state()
 def reset_navigation_state():
     st.session_state['current_question'] = 'Q1'  # Reset to the first question
     st.session_state['total_score'] = 0
+    st.session_state['path_length'] = 0
     st.session_state['user_responses'] = {}
     st.session_state['selected_option'] = None
     st.session_state['endpoint_reached'] = False
