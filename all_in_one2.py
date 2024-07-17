@@ -11,21 +11,33 @@ def ensure_folder_exists(folder_path):
     return folder_path
 
 
-def save_results(data, file_prefix):
-    folder_path = 'C:/HAT_Results'
-    # Ensure the folder exists
-    folder_path = ensure_folder_exists(folder_path)
+# def save_results(data, file_prefix):
+#     folder_path = 'C:/HAT_Results'
+#     # Ensure the folder exists
+#     folder_path = ensure_folder_exists(folder_path)
+#
+#     # Get current datetime to use as a filename
+#     current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+#     filename = f"{file_prefix}_{current_time}.txt"
+#     file_path = os.path.join(folder_path, filename)
+#
+#     # Write data to the file
+#     with open(file_path, 'w') as file:
+#         file.write(data)
+#
+#     return f"Results sent successfully."
 
+def save_results(data, file_prefix):
     # Get current datetime to use as a filename
     current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"{file_prefix}_{current_time}.txt"
-    file_path = os.path.join(folder_path, filename)
 
-    # Write data to the file
-    with open(file_path, 'w') as file:
-        file.write(data)
+    # Convert data to bytes
+    b64 = base64.b64encode(data.encode()).decode()  # Convert to base64
 
-    return f"Results sent successfully."
+    # Create download link
+    href = f'<a href="data:file/txt;base64,{b64}" download="{filename}">Download results</a>'
+    return href
 
 #######################################################################################################################
 
@@ -172,7 +184,6 @@ farm_options = {
 def page_farm(questions, options, page_name):
     import streamlit as st
     import random
-    from save_results import save_results
 
     def set_custom_css():
         custom_css = """
@@ -279,8 +290,10 @@ def page_farm(questions, options, page_name):
                 results_data = (
                     f"You've reached the end of the survey with a final score of: {st.session_state['total_score']}\n"
                     f"You've reached the end of the survey with a total path length of: {st.session_state['path_length']}")
-                result_message = save_results(results_data, file_prefix=page_name)
-                st.success(result_message)
+                # result_message = save_results(results_data, file_prefix=page_name)
+                # st.success(result_message)
+                download_link = save_results(results_data, file_prefix=f"U_{page_name}")
+                st.markdown(download_link, unsafe_allow_html=True)
 
     def user_agent_page():
         st.write("This page is for interaction between the user and an AI agent.")
@@ -328,8 +341,10 @@ def page_farm(questions, options, page_name):
                 results_data = (
                     f"You've reached the end of the survey with a final score of: {st.session_state['total_score']}\n"
                     f"You've reached the end of the survey with a total path length of: {st.session_state['path_length']}")
-                result_message = save_results(results_data, file_prefix="user_agent")
-                st.success(result_message)
+                # result_message = save_results(results_data, file_prefix="user_agent")
+                # st.success(result_message)
+                download_link = save_results(results_data, file_prefix=f"UA_{page_name}")
+                st.markdown(download_link, unsafe_allow_html=True)
 
     def initialize_consultant_availability(questions, percentage=0.8):
         question_keys = list(questions.keys())
@@ -383,8 +398,10 @@ def page_farm(questions, options, page_name):
                 results_data = (
                     f"You've reached the end of the survey with a final score of: {st.session_state['total_score']}\n"
                     f"You've reached the end of the survey with a total path length of: {st.session_state['path_length']}")
-                result_message = save_results(results_data, file_prefix="user_consultant")
-                st.success(result_message)
+                # result_message = save_results(results_data, file_prefix="user_consultant")
+                # st.success(result_message)
+                download_link = save_results(results_data, file_prefix=f"UH_{page_name}")
+                st.markdown(download_link, unsafe_allow_html=True)
 
     def user_agent_consultant_page():
         st.write("This page allows interaction between the user, an AI agent, and a human consultant.")
@@ -440,8 +457,10 @@ def page_farm(questions, options, page_name):
                 results_data = (
                     f"You've reached the end of the survey with a final score of: {st.session_state['total_score']}\n"
                     f"You've reached the end of the survey with a total path length of: {st.session_state['path_length']}")
-                result_message = save_results(results_data, file_prefix="user_agent_consultant")
-                st.success(result_message)
+                # result_message = save_results(results_data, file_prefix="user_agent_consultant")
+                # st.success(result_message)
+                download_link = save_results(results_data, file_prefix=f"UAH_{page_name}")
+                st.markdown(download_link, unsafe_allow_html=True)
 
     # Initialize session state for page navigation if it's not already set
     if 'page' not in st.session_state:
