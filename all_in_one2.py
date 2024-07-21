@@ -464,7 +464,7 @@ def page_farm(questions, options, page_name):
 
     # Initialize session state for page navigation if it's not already set
     if 'page' not in st.session_state:
-        st.session_state.page = '👤 User Only'
+        st.session_state.page = '1'
 
     # Check and initialize session state values if not already present
     def ensure_session_state():
@@ -498,12 +498,12 @@ def page_farm(questions, options, page_name):
         st.session_state['endpoint_reached'] = False
 
     # main one
-    st.sidebar.title("Irrigation for Dairy Farm")
+    st.sidebar.title("")
     menu_items = {
-        "👤 User Only": user_page,
-        "👤💼 User-Consultant Interaction": user_consultant_page,
-        "👤🤖 User-AI Interaction": user_agent_page,
-        "🤝 User-AI-Consultant Interaction": user_agent_consultant_page
+        "1": user_page,
+        "2": user_consultant_page,
+        "3": user_agent_page,
+        "4": user_agent_consultant_page
     }
 
     # Create navigation links in the sidebar
