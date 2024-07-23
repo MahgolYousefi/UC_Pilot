@@ -950,11 +950,11 @@ def main():
 
     # Display navigation buttons
     page_options = {
-        "🏠 Home": 'main',  # Using the house emoji as the Home icon
-        "🚜 Irrigation Practices for Dairy Farms": 'farm',
-        "🏦 Financial Decisions": 'finance',
-        "🥦 Health Decisions": 'health'
-        # "🔒 Mock Example": 'security'
+        # "🏠 Home": 'main',  # Using the house emoji as the Home icon
+        # "🚜 Irrigation Practices for Dairy Farms": 'farm',
+        # "🏦 Financial Decisions": 'finance',
+        # "🥦 Health Decisions": 'health',
+        "🔒 Mock Example: Digital Security": 'security'
     }
 
     for page_name, page_key in page_options.items():
@@ -966,14 +966,14 @@ def main():
     # Conditional rendering based on the navigation state
     if st.session_state['current_page'] == 'main':
         pass
-    elif st.session_state['current_page'] == 'farm':
-        page_farm(farm_questions, farm_options, page_name='irrigation')
-    elif st.session_state['current_page'] == 'finance':
-        page_farm(finance_questions, finance_options, page_name='finance')
-    elif st.session_state['current_page'] == 'health':
-        page_farm(health_questions, health_options, page_name='health')
-    # elif st.session_state['current_page'] == 'security':
-    #     page_farm(digital_questions, digital_options, page_name='security')
+    # elif st.session_state['current_page'] == 'farm':
+    #     page_farm(farm_questions, farm_options, page_name='irrigation')
+    # elif st.session_state['current_page'] == 'finance':
+    #     page_farm(finance_questions, finance_options, page_name='finance')
+    # elif st.session_state['current_page'] == 'health':
+    #     page_farm(health_questions, health_options, page_name='health')
+    elif st.session_state['current_page'] == 'security':
+        page_farm(digital_questions, digital_options, page_name='security')
 
 
 if __name__ == "__main__":
