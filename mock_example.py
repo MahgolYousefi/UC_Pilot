@@ -954,7 +954,7 @@ def main():
         # "🚜 Irrigation Practices for Dairy Farms": 'farm',
         # "🏦 Financial Decisions": 'finance',
         # "🥦 Health Decisions": 'health',
-        "🔒 Mock Example: Digital Security": 'security'
+        "Task": 'security'
     }
 
     for page_name, page_key in page_options.items():
