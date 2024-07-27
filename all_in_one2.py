@@ -672,109 +672,109 @@ finance_questions = {
 
 finance_options = {
 
-       "Q1": {"a": ("Maximize contributions to tax-deferred accounts", "Q2", +2),
+       "Q1": {"a": ("Maximize contributions to tax-deferred accounts", "Q5", +2),
 
-              "b": ("Invest in a diverse portfolio of stocks", "Q3", +1),
+              "b": ("Invest in a diverse portfolio of stocks", "Q4", +1),
 
-              "c": ("Purchase annuities for guaranteed income", "Q4", -1)},
+              "c": ("Purchase annuities for guaranteed income", "Q2", -1)},
 
-       "Q2": {"a": ("Invest entirely in a diversified stock portfolio", "Q7",-1),
+       "Q2": {"a": ("Invest entirely in a diversified stock portfolio", "Q3",-1),
 
-              "b": ("Allocate to an emergency fund, then invest the rest", "Q6", +2),
+              "b": ("Allocate to an emergency fund, then invest the rest", "Q8", +2),
 
-              "c": ("Pay off existing debt, then save the remainder", "Q8", +1)},
+              "c": ("Pay off existing debt, then save the remainder", "Q7", +1)},
 
-       "Q3": {"a": ("Rebalance to maintain original asset allocation and risk profile", "Q9", +2),
+       "Q3": {"a": ("Rebalance to maintain original asset allocation and risk profile", "Q12", +2),
 
-              "b": ("Shift a portion to more conservative investments, such as bonds, to mitigate risk", "Q4", -1),
+              "b": ("Shift a portion to more conservative investments, such as bonds, to mitigate risk","Q4", -1),
 
-              "c": ("Identify and invest in stocks that may now be undervalued" "Q12", +1)},
+              "c": ("Identify and invest in stocks that may now be undervalued" "Q9", +1)},
 
-       "Q4": {"a": ("Assess the credit risk and maturity period", "Q9", +2),
+       "Q4": {"a": ("Assess the credit risk and maturity period", "Q6", +2),
 
               "b": ("Focus on the potential returns not risks", "Q5", -1),
 
-              "c": ("Choose bonds with the highest yield", "Q7", +1)},
+              "c": ("Choose bonds with the highest yield", "Q10", +1)},
 
-       "Q5": {"a": ("Consolidate debt through a personal loan", "Q18", +2),
+       "Q5": {"a": ("Consolidate debt through a personal loan", "Q16", +2),
 
-              "b": ("Only make minimum payments to manage cash flow", "Q10", -1),
+              "b": ("Only make minimum payments to manage cash flow", "Q6", -1),
 
-              "c": ("Transfer balances to a zero-interest card", "Q14", +1)},
+              "c": ("Transfer balances to a zero-interest card", "Q13", +1)},
 
-       "Q6": {"a": ("Increase allocations to inflation-resistant assets like real estate and commodities", "Q22", +2),
+       "Q6": {"a": ("Increase allocations to inflation-resistant assets like real estate and commodities", "Q20", +2),
 
-              "b": ("Convert a portion of investments to cash to manage potential market downturns", "Q19", -1),
+              "b": ("Convert a portion of investments to cash to manage potential market downturns", "Q7", -1),
 
-              "c": ("Adjust investment ratios subtly while monitoring economic indicators closely", "Q20", +1)},
+              "c": ("Adjust investment ratios subtly while monitoring economic indicators closely", "Q14", +1)},
 
        "Q7": {"a": ("Utilize a savings plan like a 529 that provides tax advantages and educational expense flexibility", "Q25", +2),
 
-              "b": ("Allocate a portion of investments into mutual funds specifically designated for educational purposes", "Q24", +1),
+              "b": ("Allocate a portion of investments into mutual funds specifically designated for educational purposes", "Q15", +1),
 
-              "c": ("Plan on leveraging scholarships and student loans to cover educational costs", "Q23", -1)},
+              "c": ("Plan on leveraging scholarships and student loans to cover educational costs", "Q8", -1)},
 
-       "Q8": {"a": ("Focus on accumulating assets ignoring liabilities", "Q26", -1),
+       "Q8": {"a": ("Focus on accumulating assets ignoring liabilities", "Q9", -1),
 
               "b": ("Balance between saving, investing, and debt repayment", "Q28", +2),
 
-              "c": ("Prioritize high-risk, high-return investments", "Q27", +1)},
+              "c": ("Prioritize high-risk, high-return investments", "Q16", +1)},
 
        "Q9": {"a": ("Invest in tax-exempt municipal bonds", "Q30", +2),
 
-              "b": ("Maximize contributions to retirement accounts", "Q29", +1),
+              "b": ("Maximize contributions to retirement accounts", "Q17", +1),
 
-              "c": ("Avoid selling assets to reduce capital gains", -1)},
+              "c": ("Avoid selling assets to reduce capital gains", "Q10", -1)},
 
-       "Q10": {"a": ("Opt for the policy offering the most affordable premiums",+1),
+       "Q10": {"a": ("Opt for the policy offering the most affordable premiums", "Q18", +1),
 
-               "b": ("Assess policies based on coverage depth, terms, and insurer reliability", "Q30", +2),
+               "b": ("Assess policies based on coverage depth, terms, and insurer reliability", +2),
 
-               "c": ("Choose a policy recommended by trusted family or financial advisors", -1)},
+               "c": ("Choose a policy recommended by trusted family or financial advisors", "Q11", -1)},
 
-       "Q11": {"a": ("Establish a trust to protect assets and minimize taxes", "Q12", +2),
+       "Q11": {"a": ("Establish a trust to protect assets and minimize taxes", +2),
 
-               "b": ("Distribute assets equally among heirs without tax planning", "Q13", -1),
+               "b": ("Distribute assets equally among heirs without tax planning", "Q12", -1),
 
-               "c": ("Incorporate life insurance to manage future tax burdens on assets", "Q12", +1)},
+               "c": ("Incorporate life insurance to manage future tax burdens on assets", "Q19", +1)},
 
-       "Q12": {"a": ("Invest in a mix of domestic and international funds", "Q16", +2),
+       "Q12": {"a": ("Invest in a mix of domestic and international funds", +2),
 
-               "b": ("Focus solely on high-growth tech stocks", "Q17", -1),
+               "b": ("Focus solely on high-growth tech stocks", "Q13", -1),
 
-               "c": ("Keep all investments in bonds for safety", "Q18", +1)},
+               "c": ("Keep all investments in bonds for safety", +1)},
 
-       "Q13": {"a": ("Combine all debts into one low-interest loan", "Q21", +2),
+       "Q13": {"a": ("Combine all debts into one low-interest loan", +2),
 
-               "b": ("Pay off each debt separately to track progress", "Q19", +1),
+               "b": ("Pay off each debt separately to track progress", "Q21", +1),
 
-               "c": ("Take out a home equity loan to pay off credit card debt", "Q20", -1)},
+               "c": ("Take out a home equity loan to pay off credit card debt", "Q14", -1)},
 
-       "Q14": {"a": ("Invest based on tax implications now and expected income at retirement", "Q24", +2),
+       "Q14": {"a": ("Invest based on tax implications now and expected income at retirement", +2),
 
-               "b": ("Choose based on the advice of a financial advisor", "Q23", +1),
+               "b": ("Choose based on the advice of a financial advisor", "Q22", +1),
 
-               "c": ("Opt for traditional IRA for immediate tax relief", "Q22", -1)},
+               "c": ("Opt for traditional IRA for immediate tax relief", "Q15", -1)},
 
-       "Q15": {"a": ("Evaluate political and economic stability before investing", "Q26", +2),
+       "Q15": {"a": ("Evaluate political and economic stability before investing", +2),
 
-               "b": ("Invest small amounts regardless of market conditions", "Q24", -1),
+               "b": ("Invest small amounts regardless of market conditions", "Q16", -1),
 
-               "c": ("Focus on sectors with potential for quick growth", "Q27", +1)},
+               "c": ("Focus on sectors with potential for quick growth", "Q23", +1)},
 
        "Q16": {"a": ("Consider long-term financial goals and real estate market trends", "Q28", +2),
 
-               "b": ("Always prefer to rent for financial flexibility", -1),
+               "b": ("Always prefer to rent for financial flexibility", "Q17", -1),
 
-               "c": ("Buy a home when the mortgage is less than rent", "Q29", +1)},
+               "c": ("Buy a home when the mortgage is less than rent", "Q24", +1)},
 
        "Q17": {"a": ("Track income and expenses meticulously and adjust as needed", "Q30", +2),
 
                "b": ("Set a fixed budget and stick to it regardless of changes in income", +1),
 
-               "c": ("Prioritize expenses based on immediate needs only", -1)},
+               "c": ("Prioritize expenses based on immediate needs only", "Q17", -1)},
 
-       "Q18": {"a": ("Refinance only when it leads to substantial immediate monthly savings", -1),
+       "Q18": {"a": ("Refinance only when it leads to substantial immediate monthly savings", "Q18", -1),
 
                "b": ("Consider refinancing when there's a significant decrease in interest rates", +1),
 
@@ -784,7 +784,7 @@ finance_options = {
 
                "b": ("Begin with a lean startup approach, minimising initial costs and expanding gradually", +2),
 
-               "c": ("Target a niche market, minimizing the impact of competitors", -1)},
+               "c": ("Target a niche market, minimizing the impact of competitors", "Q19", -1)},
 
        "Q20": {"a": ("Set aside 6-12 months of expenses depending on job stability", +2),
 
@@ -851,9 +851,7 @@ finance_options = {
                "b": ("Invest in opportunities that promise high returns despite the higher risk", -1),
 
                "c": ("Ensure adequate insurance coverage to protect against unforeseen financial losses", +2)}
-
    }
-
 
 
 #######################################################################################################################
