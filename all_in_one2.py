@@ -857,160 +857,251 @@ finance_options = {
 #######################################################################################################################
 health_questions = {
 
-   "Q1": "Considering the multifaceted nature of obesity, what is often the most influential factor in the prevalence of excess weight across diverse populations?",
+  "Q1": "Considering the multifaceted nature of obesity, what is often the most influential factor in the prevalence of excess weight across diverse populations?",
 
-   "Q2": "In the evaluation of obesity and associated health risks, which metric provides the most widely used assessment of excess weight?",
+  "Q2": "In the evaluation of obesity and associated health risks, which metric provides the most widely used assessment of excess weight?",
 
-   "Q3": "What minimal percentage of weight loss significantly reduces health risks?",
+  "Q3": "What minimal percentage of weight loss significantly reduces health risks?",
 
-   "Q4": "Considering the multifactorial nature of obesity, which factor significantly complicates individual efforts towards weight management?",
+  "Q4": "Considering the multifactorial nature of obesity, which factor significantly complicates individual efforts towards weight management?",
 
-   "Q5": "Which macronutrient is crucial for numerous bodily functions but should be moderated in dietary intake due to its high caloric density?",
+  "Q5": "Which macronutrient is crucial for numerous bodily functions but should be moderated in dietary intake due to its high caloric density?",
 
-   "Q6": "Which pervasive environmental change in contemporary society most significantly contributes to increasing obesity rates?",
+  "Q6": "Which pervasive environmental change in modern society most significantly contributes to increasing obesity rates?",
 
-   "Q7": "Which approach is least effective for long-term weight management?",
+  "Q7": "Which approach is least effective for long-term weight management?",
 
-   "Q8": "Which initial action best aligns with an effective strategy for weight management?",
+  "Q8": "Which initial action best aligns with an effective strategy for weight management?",
 
-   "Q9": "In what ways do psychological elements contribute to fluctuations in body weight?",
+  "Q9": "In what ways do psychological elements contribute to fluctuations in body weight?",
 
-   "Q10": "According to current research, to what extent do genetics contribute to an individual's risk of developing obesity?",
+  "Q10": "To what extent do genetics contribute to an individual's risk of developing obesity?",
 
-   "Q11": "Which type of physical activity is recommended for effective weight loss?",
+  "Q11": "Which type of physical activity is recommended for effective weight loss?",
 
-   "Q12": "How does optimal water consumption vary in a diet plan aimed at weight loss, considering individual physiological differences?",
+  "Q12": "How does optimal water consumption vary in a diet plan aimed at weight loss, considering individual physiological differences?",
 
-   "Q13": "What is the best practice for incorporating proteins into a balanced diet?",
+  "Q13": "What is the best practice for incorporating proteins into a balanced diet?",
 
-   "Q14": "What is the optimal strategy for integrating fats into a diet to support cardiovascular health and overall wellness?",
+  "Q14": "What is the optimal strategy for integrating fats into a diet to support cardiovascular health and overall wellness?",
 
-   "Q15": "What is the primary benefit of incorporating dietary fiber into a weight loss regimen?",
+  "Q15": "What is the primary benefit of incorporating dietary fiber into a weight loss regimen?",
 
-   "Q16":  "How can increased feelings of fullness contribute to a sustainable weight management plan?",
+  "Q16":  "How can increased feelings of fullness contribute to a sustainable weight management plan?",
 
-   "Q17": "What is a common but misleading perception about the effectiveness of dieting for weight loss?",
+  "Q17": "What is a common but misleading perception about the effectiveness of dieting for weight loss?",
 
-   "Q18": "Which meal planning strategy best supports sustainable weight management and balanced nutrition?",
+  "Q18": "Which meal planning strategy best supports sustainable weight management and balanced nutrition?",
 
-   "Q19": "When considering fats in a weight loss diet, which characteristic is most beneficial for long-term health?",
+  "Q19": "When considering fats in a weight loss diet, which characteristic is most beneficial for long-term health?",
 
-   "Q20": "Which psychological strategy is most effective for maintaining long-term weight loss?",
+  "Q20": "Which psychological strategy is most effective for maintaining long-term weight loss?",
 
-   "Q21": "What is the least helpful method to achieve and maintain a healthy weight?",
+  "Q21": "What is the least helpful method to achieve and maintain a healthy weight?",
 
-   "Q22": "Which strategy is most recommended for a beginner to start losing weight?",
+  "Q22": "Which strategy is most recommended for a beginner to start losing weight?",
 
-   "Q23": "What is the recommended timing for surgical interventions in the treatment of obesity?",
+  "Q23": "What is the recommended timing for surgical interventions in the treatment of obesity?",
 
-   "Q24": "What is the best initial dietary change to make when starting a weight loss plan?",
+  "Q24": "What is the best initial dietary change to make when starting a weight loss plan?",
 
-   "Q25": "What common dietary advice is now considered outdated?",
+  "Q25": "What common dietary advice is now considered outdated?",
 
-   "Q26": "In what ways can modern technology facilitate effective weight management?",
+  "Q26": "In what ways can modern technology facilitate effective weight management?",
 
-   "Q27":  "What is an essential factor to consider when selecting medications for weight loss?",
+  "Q27":  "What is an essential factor to consider when selecting medications for weight loss?",
 
-   "Q28": "Which lifestyle change provides the most sustainable impact on weight loss?",
+  "Q28": "Which lifestyle change provides the most sustainable impact on weight loss?",
 
-   "Q29": "What nutritional misconception could lead to ineffective dieting?",
+  "Q29": "What nutritional misconception could lead to ineffective dieting?",
 
-   "Q30":  "Which approach is most effective in sustaining long-term weight management?",
+  "Q30":  "Which approach is most effective in sustaining long-term weight management?",
 
 }
 
 
 health_options = {
-    "Q1": {"a": ("Biological predispositions that affect metabolic rates", "Q4", +1),
-           "b": ("Changes in lifestyle patterns that reduce physical activity", "Q3", +2),
-           "c": ("Patterns of food consumption and overall calorie management", "Q2", -1)},
-    "Q2": {"a": ("Body Mass Index (BMI), a common standard for categorizing weight relative to height", "Q5", +2),
-           "b": ("Waist-to-hip ratio, which assesses fat distribution and potential risk", "Q4", +1),
-           "c": ("Body fat percentage, a direct measure of body composition", "Q3", -1)},
-    "Q3": {"a": ("5% of total body weight", "Q6", +1),
-           "b": ("10% of total body weight", "Q7", +2),
-           "c": ("15% of total body weight", "Q4", -1)},
-    "Q4": {"a": ("Personal discipline issues, including consistency in diet and exercise", "Q8", +1),
-           "b": ("Genetic predispositions that influence metabolic rate and fat storage", "Q10", +2),
-           "c": ("Environmental factors, such as availability of and access to healthy food options", "Q5", -1)},
-    "Q5": {"a": ("Proteins, which are vital for muscle repair and growth", "Q9", +1),
-           "b": ("Fats, necessary for hormone production and nutrient absorption", "Q11", +2),
-           "c": ("Carbohydrates, main source of energy for daily activities", "Q6", -1)},
-    "Q6": {"a": ("Increased food availability", "Q11", +2),
-           "b": ("Economic factors", "Q8", +1),
-           "c": ("Technological advancements", "Q7", -1)},
-    "Q7": {"a": ("Following fad diets", "Q12", +2),
-           "b": ("Caloric restriction", "Q10", +1),
-           "c": ("Sustainable lifestyle changes", "Q8", -1)},
-    "Q8": {"a": ("Setting realistic goals", "Q13", +2),
-           "b": ("Seeking professional advice", "Q12", +1),
-           "c": ("Committing to a fitness facility", "Q9", -1)},
-    "Q9": {"a": ("Emotional overeating", "Q15", +2),
-           "b": ("Sleep deprivation", "Q14", +1),
-           "c": ("Interpersonal tensions", "Q10", -1)},
-    "Q10": {"a": ("70% genetic influence", "Q16", +1),
-            "b": ("50% genetic influence", "Q17", +2),
-            "c": ("30% genetic influence", "Q11", -1)},
-    "Q11": {"a": ("High-intensity steady-state cardio", "Q18", +1),
-            "b": ("High-intensity interval training", "Q19", +2),
-            "c": ("Weight training", "Q12", -1)},
-    "Q12": {"a": ("Maintain a baseline of at least 2 liters per day, potentially increasing based on factors like physical activity and overall health", "Q20", +2),
-            "b": ("Recommend a flexible approach, starting at 1 liter per day and adjusting according to personal health advice and bodily responses", "Q19", +1),
-            "c": ("Tailor water intake to personal hydration cues and adjust according to specific dietary and exercise regimes", "Q13", -1)},
-    "Q13": {"a": ("Focus primarily on animal-based proteins, which are complete sources of all essential amino acids", "Q21", +1),
-            "b": ("Mix of plant-based and animal-based proteins for nutritional diversity", "Q22", +2),
-            "c": ("Include plant-based proteins predominantly, supplementing with animal-based proteins as needed", "Q14", -1)},
-    "Q14": {"a": ("Focus primarily on increasing the intake of omega-9 monounsaturated fats, such as those found in olive oil", "Q23", +1),
-            "b": ("Limit all forms of dietary fats significantly to reduce calorie intake and prevent fat accumulation", "Q24", +2),
-            "c": ("Balance the intake of omega-3 and omega-6 polyunsaturated fats, ensuring a higher proportion of omega-3s from sources like fish and flaxseed", "Q15", -1)},
-    "Q15": {"a": ("It accelerates the metabolism, leading to rapid weight loss", "Q25", +1),
-            "b": ("It supports digestive health, promoting satiety and regular bowel movements", "Q26", +2),
-            "c": ("It enhances nutrient absorption, ensuring efficient use of consumed calories", "Q16", -1)},
-    "Q16": {"a": ("By reducing overall caloric intake", "Q27", +2),
-            "b": ("By increasing energy expenditure", "Q26", +1),
-            "c": ("By improving metabolic flexibility", "Q17", -1)},
-    "Q17": {"a": ("Emphasizing the quality of food consumed is more important than the quantity for sustainable weight loss", "Q28", +1),
-            "b": ("Effective dieting primarily revolves around strict calorie restriction regardless of nutritional value", "Q29", +2),
-            "c": ("Short-term dieting approaches can lead to long-term weight management success", "Q18", -1)},
-    "Q18": {"a": ("Adopting a fixed calorie limit", "Q30", +1),
-            "b": ( "Integrating a balance of macronutrients and permit occasional indulgences", +2),
-            "c": ("Focusing primarily on high-protein, low-carb meals to maximise fat loss", "Q19", -1)},
-    "Q19": {"a": ("High levels of medium-chain triglycerides (MCTs) for quick energy", +1),
-            "b": ("High in monounsaturated fats which support heart health", +2),
-            "c": ("Rich in saturated fats to increase satiety and reduce hunger", "Q20", -1)},
-    "Q20": {"a": ("Creating a system of small, frequent rewards to maintain motivation", +1),
-            "b": ("Establishing a reliable support network for encouragement and accountability", +2),
-            "c": ("Regularly setting and reassessing short-term, achievable goals", "Q21", -1)},
-    "Q21": {"a": ("Adopting a very low-calorie diet", -1),
-            "b": ("Incorporating moderate physical activity", +1),
-            "c": ("Making gradual dietary adjustments", +2)},
-    "Q22": {"a": ("Joining a weight loss clinic", -1),
-            "b": ("Starting with light exercise", +2),
-            "c": ("Starting with cutting all sugars", +1)},
-    "Q23": {"a": ("They are preferred as an initial treatment option", -1),
-            "b": ("They are considered after lifestyle and pharmacological interventions have been attempted", +2),
-            "c": ("They are avoided in favor of non-invasive methods", +1)},
-    "Q24": {"a": ("Increasing protein intake", +1),
-            "b": ("Eliminating all fats", -1),
-            "c": ("Reducing processed foods", +2)},
-    "Q25": {"a": ("Eating multiple small meals is necessary", -1),
-            "b": ("Calorie counting is the only way to lose weight", +1),
-            "c": ("Balanced macronutrients are key", +2)},
-    "Q26": {"a": ("Integrating comprehensive dietary tracking applications with personalised feedback systems", +2),
-            "b": ( "Minimising screen time and digital device usage to focus on physical activities", -1),
-            "c": ("Utilising wearable devices exclusively to monitor physical activity levels without considering dietary intake", +1)},
-    "Q27": {"a": ("They should be used without medical consultation", -1),
-            "b": ("They are typically for individuals with a BMI exceeding 30", +2),
-            "c": ("They can serve as a substitute for dietary modifications", +1)},
-    "Q28": {"a": ("Switching to a vegetarian diet", +1),
-            "b": ("Gradual increase in physical activity", +2),
-            "c": ("Frequent fasting periods", -1)},
-    "Q29": {"a": ("Fats are the main dietary enemy", -1),
-            "b": ("All carbs must be eliminated", +1),
-            "c": ("Protein should be the focus of the diet", +2)},
-    "Q30": {"a": ("Regularly switching diet plans to prevent metabolic adaptation", +1),
-            "b": ( "Adhering to consistent, healthy eating habits", +2),
-            "c": ("Avoiding all social situations involving food to control intake", -1)}
+
+  "Q1": {"a": ("Biological predispositions that affect metabolic rates", "Q3", +1),
+
+         "b": ("Changes in lifestyle patterns that reduce physical activity", "Q2", -1),
+
+         "c": ("Patterns of food consumption and overall calorie management", "Q4", +2)},
+
+  "Q2": {"a": ("Body Mass Index (BMI), a common standard for categorizing weight relative to height", "Q7", +2),
+
+         "b": ("Waist-to-hip ratio, which assesses fat distribution and potential risk", "Q3", -1),
+
+         "c": ("Body fat percentage, a direct measure of body composition", "Q6", +1)},
+
+  "Q3": {"a": ("5% of total body weight", "Q4", -1),
+
+         "b": ("10% of total body weight", "Q7", +2),
+
+         "c": ("15% of total body weight", "Q6", +1)},
+
+  "Q4": {"a": ("Personal discipline issues, including consistency in diet and exercise", "Q5", -1),
+
+         "b": ("Genetic predispositions that influence metabolic rate and fat storage", "Q10", +2),
+
+         "c": ("Environmental factors, such as availability of and access to healthy food options", "Q8", +1)},
+
+  "Q5": {"a": ("Proteins, which are vital for muscle repair and growth", "Q6", -1),
+
+         "b": ("Fats, necessary for hormone production and nutrient absorption", "Q11", +2),
+
+         "c": ("Carbohydrates, main source of energy for daily activities", "Q9", +1)},
+
+  "Q6": {"a": ("Increased food availability", "Q11", +2),
+
+         "b": ("Economic factors", "Q7", -1),
+
+         "c": ("Technological advancements", "Q8", +1)},
+
+  "Q7": {"a": ("Following fad diets", "Q12", +2),
+
+         "b": ("Caloric restriction", "Q8", -1),
+
+         "c": ("Sustainable lifestyle changes", "Q10", +1)},
+
+  "Q8": {"a": ("Setting realistic goals", "Q13", +2),
+
+         "b": ("Seeking professional advice", "Q12", +1),
+
+         "c": ("Committing to a fitness facility", "Q9", -1)},
+
+  "Q9": {"a": ("Emotional overeating", "Q15", +2),
+
+         "b": ("Sleep deprivation", "Q10", -1),
+
+         "c": ("Interpersonal tensions", "Q14", +1)},
+
+  "Q10": {"a": ("70% genetic influence", "Q11", -1),
+
+          "b": ("50% genetic influence", "Q16", +1),
+
+          "c": ("30% genetic influence", "Q17", +2)},
+
+  "Q11": {"a": ("High-intensity steady-state cardio", "Q18", +1),
+
+          "b": ("High-intensity interval training", "Q19", +2),
+
+          "c": ("Weight training", "Q12", -1)},
+
+  "Q12": {"a": ("Maintain a baseline of at least 2 liters per day, potentially increasing based on factors like physical activity and overall health", "Q20", +2),
+
+          "b": ("Recommend a flexible approach, starting at 1 liter per day and adjusting according to personal health advice and bodily responses", "Q13", -1),
+
+          "c": ("Tailor water intake to personal hydration cues and adjust according to specific dietary and exercise regimes", "Q19", +1)},
+
+  "Q13": {"a": ("Focus primarily on animal-based proteins, which are complete sources of all essential amino acids", "Q14", -1),
+
+          "b": ("Mix of plant-based and animal-based proteins for nutritional diversity", "Q22", +2),
+
+          "c": ("Include plant-based proteins predominantly, supplementing with animal-based proteins as needed", "Q21", +1)},
+
+  "Q14": {"a": ("Focus primarily on increasing the intake of omega-9 monounsaturated fats, such as those found in olive oil", "Q15", -1),
+
+          "b": ("Limit all forms of dietary fats significantly to reduce calorie intake and prevent fat accumulation", "Q23", +1),
+
+          "c": ("Balance the intake of omega-3 and omega-6 polyunsaturated fats, ensuring a higher proportion of omega-3s from sources like fish and flaxseed", "Q24", +2)},
+
+  "Q15": {"a": ("It accelerates the metabolism, leading to rapid weight loss", "Q25", +1),
+
+          "b": ("It supports digestive health, promoting satiety and regular bowel movements", "Q26", +2),
+
+          "c": ("It enhances nutrient absorption, ensuring efficient use of consumed calories", "Q16", -1)},
+
+  "Q16": {"a": ("By reducing overall caloric intake", "Q27", +2),
+
+          "b": ("By increasing energy expenditure", "Q26", +1),
+
+          "c": ("By improving metabolic flexibility", "Q17", -1)},
+
+  "Q17": {"a": ("Emphasizing the quality of food consumed is more important than the quantity for sustainable weight loss", "Q18", -1),
+
+          "b": ("Effective dieting primarily revolves around strict calorie restriction regardless of nutritional value", "Q28", +2),
+
+          "c": ("Short-term dieting approaches can lead to long-term weight management success", "Q28", +1)},
+
+  "Q18": {"a": ("Adopting a fixed calorie limit", "Q19", -1),
+
+          "b": ( "Integrating a balance of macronutrients and permit occasional indulgences", "Q30", +2),
+
+          "c": ("Focusing primarily on high-protein, low-carb meals to maximise fat loss", "Q29", +1)},
+
+  "Q19": {"a": ("High levels of medium-chain triglycerides (MCTs) for quick energy", "Q20", -1),
+
+          "b": ("High in monounsaturated fats which support heart health", +2),
+
+          "c": ("Rich in saturated fats to increase satiety and reduce hunger", +1)},
+
+  "Q20": {"a": ("Creating a system of small, frequent rewards to maintain motivation", "Q21", -1),
+
+          "b": ("Establishing a reliable support network for encouragement and accountability", +2),
+
+          "c": ("Regularly setting and reassessing short-term, achievable goals", +1)},
+
+  "Q21": {"a": ("Adopting a very low-calorie diet", "Q22", -1),
+
+          "b": ("Incorporating moderate physical activity", +1),
+
+          "c": ("Making gradual dietary adjustments", +2)},
+
+  "Q22": {"a": ("Joining a weight loss clinic", "Q23", -1),
+
+          "b": ("Starting with light exercise", +2),
+
+          "c": ("Starting with cutting all sugars", +1)},
+
+  "Q23": {"a": ("They are preferred as an initial treatment option", "Q24", -1),
+
+          "b": ("They are considered after lifestyle and pharmacological interventions have been attempted", +2),
+
+          "c": ("They are avoided in favor of non-invasive methods", +1)},
+
+  "Q24": {"a": ("Increasing protein intake", +1),
+
+          "b": ("Eliminating all fats", "Q25", -1),
+
+          "c": ("Reducing processed foods", +2)},
+
+  "Q25": {"a": ("Eating multiple small meals is necessary", "Q26", -1),
+
+          "b": ("Calorie counting is the only way to lose weight", +1),
+
+          "c": ("Balanced macronutrients are key", +2)},
+
+  "Q26": {"a": ("Integrating comprehensive dietary tracking applications with personalised feedback systems", +2),
+
+          "b": ( "Minimising screen time and digital device usage to focus on physical activities", "Q27", -1),
+
+          "c": ("Utilising wearable devices exclusively to monitor physical activity levels without considering dietary intake", +1)},
+
+  "Q27": {"a": ("They should be used without medical consultation", "Q28", -1),
+
+          "b": ("They are typically for individuals with a BMI exceeding 30", +2),
+
+          "c": ("They can serve as a substitute for dietary modifications", +1)},
+
+  "Q28": {"a": ("Switching to a vegetarian diet", +1),
+
+          "b": ("Gradual increase in physical activity", +2),
+
+          "c": ("Frequent fasting periods", "Q29", -1)},
+
+  "Q29": {"a": ("Fats are the main dietary enemy", "Q30", -1),
+
+          "b": ("All carbs must be eliminated", +1),
+
+          "c": ("Protein should be the focus of the diet", +2)},
+
+  "Q30": {"a": ("Regularly switching diet plans to prevent metabolic adaptation", +1),
+
+          "b": ( "Adhering to consistent, healthy eating habits", +2),
+
+          "c": ("Avoiding all social situations involving food to control intake", -1)}
+
 }
 
 
