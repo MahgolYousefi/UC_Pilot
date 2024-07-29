@@ -256,7 +256,7 @@ farm_options = {
 
    "Q25": {"a": ("Choose early morning hours to minimize evaporation losses", +2),
 
-           "b": ("Irrigate at noon to coincide with peak sun and heat", "Q29", "Q26", -1),
+           "b": ("Irrigate at noon to coincide with peak sun and heat", "Q26", -1),
 
            "c": ("Alternate irrigation times weekly to test different efficiencies", +1)},
 
@@ -640,123 +640,63 @@ finance_questions = {
 
      "Q1": "What is the primary factor to consider when planning for retirement savings?",
 
-
-
      "Q2": "What is the best strategy to manage a financial windfall, such as an inheritance?",
-
-
 
      "Q3": "How should an investor adjust his/her portfolio in response to a major stock market correction?",
 
-
-
      "Q4": "What critical factor should be considered before investing in high-yield bonds?",
-
-
 
      "Q5": "What is a wise approach to managing significant credit card debt?",
 
-
-
      "Q6": "How should personal investments be adjusted in anticipation of rising inflation?",
-
-
 
      "Q7": "As a university student managing your finances, what is the most beneficial strategy for saving for future educational expenses?",
 
-
-
      "Q8": "What should be prioritized when creating a long-term financial plan?",
-
-
 
      "Q9": "How can one optimize their investment portfolio for tax efficiency?",
 
-
-
      "Q10": "What is a key consideration when selecting a life insurance policy?",
-
-
 
      "Q11": "What strategy can young adults adopt to manage their assets and minimize future tax liabilities?",
 
-
-
      "Q12": "How can one ensure adequate diversification in their investment portfolio?",
-
-
 
      "Q13": "What is the best way to approach debt consolidation?",
 
-
-
      "Q14": "How should one decide between investing in a Roth IRA versus a traditional IRA?",
-
-
 
      "Q15": "What are the risks associated with investing in emerging markets?",
 
-
-
      "Q16": "What factors should be considered when planning to buy versus rent a home?",
-
-
 
      "Q17": "What is an effective strategy for managing a personal budget?",
 
-
-
      "Q18": "How should one evaluate the decision to refinance a mortgage?",
-
-
 
      "Q19": "What strategy should be prioritized when launching a new business to mitigate initial risks?",
 
-
-
      "Q20": "How does one determine the right amount of emergency savings?",
-
-
 
      "Q21": "What steps should be taken to protect one's financial information online?",
 
-
-
      "Q22": "How should one assess the impact of economic recession on personal finances?",
-
-
 
      "Q23": "Which approach can significantly enhance the efficiency of paying off student loans?",
 
-
-
      "Q24": "What are effective strategies for leveraging real estate to build wealth?",
-
-
 
      "Q25": "What factors should influence the asset allocation in a retirement portfolio?",
 
-
-
-     "Q26":  "As a young professional, how should you revise your financial goals following significant life changes, such as a new job or moving to a new city?",
-
-
+     "Q26": "As a young professional, how should you revise your financial goals following significant life changes, such as a new job or moving to a new city?",
 
      "Q27": "What should be factored into retirement planning to effectively manage future healthcare costs?",
 
-
-
      "Q28": "When is it okay to accept higher investment fees?",
-
-
 
      "Q29": "What is the most effective way to utilize credit scores for securing low-interest loans?",
 
-
-
      "Q30": "What key step should not be overlooked in a financial risk management plan?",
-
-
 
  }
 
@@ -768,7 +708,7 @@ finance_options = {
 
             "c": ("Purchase annuities for guaranteed income", "Q2", -1)},
 
-     "Q2": {"a": ("Invest entirely in a diversified stock portfolio", "Q3",-1),
+     "Q2": {"a": ("Invest entirely in a diversified stock portfolio", "Q3", -1),
 
             "b": ("Allocate to an emergency fund, then invest the rest", "Q5", +2),
 
@@ -776,9 +716,9 @@ finance_options = {
 
      "Q3": {"a": ("Rebalance to maintain original asset allocation and risk profile", "Q7", +2),
 
-            "b": ("Shift a portion to more conservative investments, such as bonds, to mitigate risk","Q4", -1),
+            "b": ("Shift a portion to more conservative investments, such as bonds, to mitigate risk", "Q4", -1),
 
-            "c": ("Identify and invest in stocks that may now be undervalued" "Q6", +1)},
+            "c": ("Identify and invest in stocks that may now be undervalued", "Q6", +1)},
 
      "Q4": {"a": ("Assess the credit risk and maturity period", "Q10", +2),
 
@@ -862,7 +802,7 @@ finance_options = {
 
              "b": ("Set a fixed budget and stick to it regardless of changes in income", "Q28", +1),
 
-             "c": ("Prioritize expenses based on immediate needs only","Q18", -1)},
+             "c": ("Prioritize expenses based on immediate needs only", "Q18", -1)},
 
      "Q18": {"a": ("Refinance only when it leads to substantial immediate monthly savings", "Q19", -1),
 
@@ -952,127 +892,65 @@ finance_options = {
 #######################################################################################################################
 health_questions = {
 
-
-
  "Q1": "Considering the varied nature of obesity, what is often the most influential factor in the occurance of excess weight across diverse populations?",
 
-
-
-"Q2": "In the evaluation of obesity and associated health risks, which metric provides the most widely used assessment of excess weight?",
-
-
+ "Q2": "In the evaluation of obesity and associated health risks, which metric provides the most widely used assessment of excess weight?",
 
  "Q3": "What minimal percentage of weight loss significantly reduces health risks?",
 
-
-
  "Q4": "Considering the multifactorial nature of obesity, which factor significantly complicates individual efforts towards weight management?",
-
-
 
  "Q5": "Which macronutrient is crucial for numerous bodily functions but should be moderated in dietary intake due to its high caloric density?",
 
-
-
  "Q6": "Which pervasive environmental change in modern society most significantly contributes to increasing obesity rates?",
-
-
 
  "Q7": "Which approach is least effective for long-term weight management?",
 
-
-
  "Q8": "Which initial action best aligns with an effective strategy for weight management?",
-
-
 
  "Q9": "In what ways do psychological elements contribute to fluctuations in body weight?",
 
-
-
  "Q10": "To what extent do genetics contribute to an individual's risk of developing obesity?",
-
-
 
  "Q11": "Which type of physical activity is recommended for effective weight loss?",
 
-
-
  "Q12": "How does optimal water consumption vary in a diet plan aimed at weight loss, considering individual physiological differences?",
-
-
 
  "Q13": "What is the best practice for incorporating proteins into a balanced diet?",
 
-
-
  "Q14": "What is the optimal strategy for integrating fats into a diet to support cardiovascular health and overall wellness?",
-
-
 
  "Q15": "What is the primary benefit of incorporating dietary fiber into a weight loss regimen?",
 
-
-
  "Q16":  "How can increased feelings of fullness contribute to a sustainable weight management plan?",
-
-
 
  "Q17": "What is a common but misleading perception about the effectiveness of dieting for weight loss?",
 
-
-
  "Q18": "Which meal planning strategy best supports sustainable weight management and balanced nutrition?",
-
-
 
  "Q19": "When considering fats in a weight loss diet, which characteristic is most beneficial for long-term health?",
 
-
-
  "Q20": "Which psychological strategy is most effective for maintaining long-term weight loss?",
-
-
 
  "Q21": "What is the least helpful method to achieve and maintain a healthy weight?",
 
-
-
  "Q22": "Which strategy is most recommended for a beginner to start losing weight?",
-
-
 
  "Q23": "What is the recommended timing for surgical interventions in the treatment of obesity?",
 
-
-
  "Q24": "What is the best initial dietary change to make when starting a weight loss plan?",
-
-
 
  "Q25": "What common dietary advice is now considered outdated?",
 
-
-
  "Q26": "In what ways can modern technology facilitate effective weight management?",
-
-
 
  "Q27":  "What is an essential factor to consider when selecting medications for weight loss?",
 
-
-
  "Q28": "Which lifestyle change provides the most sustainable impact on weight loss?",
-
-
 
  "Q29": "What nutritional misconception could lead to ineffective dieting?",
 
-
-
  "Q30":  "Which approach is most effective in sustaining long-term weight management?",
-
-
 
 }
 
@@ -1398,6 +1276,22 @@ digital_options = {
 
 #######################################################################################################################
 
+def reset_state():
+    # Reset all session state variables necessary for starting a new task
+    st.session_state['current_question'] = 'Q1'
+    st.session_state['user_responses'] = {}
+    st.session_state['selected_option'] = None
+    st.session_state['total_score'] = 0
+    st.session_state['path_length'] = 0
+    st.session_state['endpoint_reached'] = False
+
+
+# Define a function that resets the state and switches to a new task
+def load_task(task_key):
+    reset_state()
+    st.session_state['current_page'] = task_key
+    st.experimental_rerun()
+
 
 def get_image_base64(image_path):
     with open(image_path, "rb") as image_file:
@@ -1436,9 +1330,14 @@ def main():
         # "🔒 Mock Example": 'security'
     }
 
+    # Render task selection buttons
     for page_name, page_key in page_options.items():
         if st.button(page_name):
-            st.session_state['current_page'] = page_key
+            load_task(page_key)
+
+    # for page_name, page_key in page_options.items():
+    #     if st.button(page_name):
+    #         st.session_state['current_page'] = page_key
 
     # Adding a horizontal line after navigation
     st.markdown("<hr>", unsafe_allow_html=True)
