@@ -1290,7 +1290,7 @@ def reset_state():
 def load_task(task_key):
     reset_state()
     st.session_state['current_page'] = task_key
-    st.experimental_rerun()
+    st.rerun()
 
 
 def get_image_base64(image_path):
