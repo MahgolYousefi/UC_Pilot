@@ -45,218 +45,251 @@ def save_results(data, file_prefix):
 
 #######################################################################################################################
 farm_questions = {
-        "Q1": "What is the primary consideration for starting spring irrigation on a dairy farm?",
-        "Q2": "What is the most accurate method to assess soil moisture before initiating irrigation?",
-        "Q3": "What key factor influences the choice of an irrigation system for dairy farming?",
-        "Q4": "Why is it important to understand the water holding capacity (WHC) of your soil?",
-        "Q5": "What routine maintenance is essential for maintaining irrigation efficiency?",
-        "Q6": "How should irrigation frequency be adjusted throughout the growing season?",
-        "Q7": "Which irrigation method minimizes water loss in sandy soils?",
-        "Q8": "What are the risks of irrigating when the soil is at field capacity?",
-        "Q9": "What role does an efficient pump play in an irrigation system?",
-        "Q10": "How should rainfall data integrate into irrigation planning?",
-        "Q11": "What common installation error should be avoided with irrigation nozzles?",
-        "Q12": "What is a major benefit of variable speed drives on irrigation pumps?",
-        "Q13": "What is the best strategy for irrigation during periods of high evapotranspiration?",
-        "Q14": "Why should irrigation systems be checked regularly?",
-        "Q15": "What should be considered first when installing a new irrigation system?",
-        "Q16": "How does the type of irrigation system affect water distribution uniformity?",
-        "Q17": "Why should irrigation settings be adjusted according to soil type?",
-        "Q18": "How can water wastage be effectively reduced during irrigation?",
-        "Q19": "What technique helps prevent nutrient leaching during irrigation?",
-        "Q20": "Why is it crucial to maintain correct irrigation pressure?",
-        "Q21": "What effect does soil temperature have on irrigation needs?",
-        "Q22": "What adjustments are necessary for irrigation during rainy periods?",
-        "Q23": "How can irrigation schedules be adjusted to minimize plant stress?",
-        "Q24": "How does irrigation equipment configuration affect its effectiveness?",
-        "Q25": "What are the best practices for choosing irrigation times to maximize efficiency?",
-        "Q26": "How does the choice of crops affect irrigation strategies?",
-        "Q27": "What impact does improper irrigation have on soil health?",
-        "Q28": "How do return periods affect plant growth in irrigation settings?",
-        "Q29": "What role do soil moisture sensors play in efficient irrigation?",
-        "Q30": "What are the important end-of-season maintenance actions for irrigation systems?"
+
+       "Q1": "What is the primary consideration for starting spring irrigation on a dairy farm?",
+
+       "Q2": "What is the most accurate method to assess soil moisture before initiating irrigation?",
+
+       "Q3": "What key factor influences the choice of an irrigation system for dairy farming?",
+
+       "Q4": "Why is it important to understand the water holding capacity (WHC) of your soil?",
+
+       "Q5": "What routine maintenance is essential for maintaining irrigation efficiency?",
+
+       "Q6": "How should irrigation frequency be adjusted throughout the growing season?",
+
+       "Q7": "Which irrigation method minimizes water loss in sandy soils?",
+
+       "Q8": "What are the risks of irrigating when the soil is at field capacity?",
+
+       "Q9": "What role does an efficient pump play in an irrigation system?",
+
+       "Q10": "How should rainfall data integrate into irrigation planning?",
+
+       "Q11": "What common installation error should be avoided with irrigation nozzles?",
+
+       "Q12": "What is a major benefit of variable speed drives on irrigation pumps?",
+
+       "Q13": "What is the best strategy for irrigation during periods of high evapotranspiration?",
+
+       "Q14": "Why should irrigation systems be checked regularly?",
+
+       "Q15": "What should be considered first when installing a new irrigation system?",
+
+       "Q16": "How does the type of irrigation system affect water distribution uniformity?",
+
+       "Q17": "Why should irrigation settings be adjusted according to soil type?",
+
+       "Q18": "How can water wastage be effectively reduced during irrigation?",
+
+       "Q19": "What technique helps prevent nutrient leaching during irrigation?",
+
+       "Q20": "Why is it crucial to maintain correct irrigation pressure?",
+
+       "Q21": "What effect does soil temperature have on irrigation needs?",
+
+       "Q22": "What adjustments are necessary for irrigation during rainy periods?",
+
+       "Q23": "How can irrigation schedules be adjusted to minimize plant stress?",
+
+       "Q24": "How does irrigation equipment configuration affect its effectiveness?",
+
+       "Q25": "What are the best practices for choosing irrigation times to maximize efficiency?",
+
+       "Q26": "How does the choice of crops affect irrigation strategies?",
+
+       "Q27": "What impact does improper irrigation have on soil health?",
+
+       "Q28": "How do return periods affect plant growth in irrigation settings?",
+
+       "Q29": "What advanced techniques enhance irrigation efficiency?",
+
+       "Q30": "What are the important end-of-season maintenance actions for irrigation systems?"
+
 }
 
+
 farm_options = {
-    "Q1": {"a": ("Use data from soil moisture sensors to determine irrigation needs", "Q4", +2),
+   "Q1": {"a": ("Use data from soil moisture sensors to determine irrigation needs", "Q4", +2),
 
-           "b": ("Irrigate based on current soil moisture data obtained through manual testing", "Q3", +1),
+          "b": ("Irrigate based on current soil moisture data obtained through manual testing", "Q3", +1),
 
-           "c": ("Seek personalized advice from local irrigation experts based on current soil data", "Q2", -1)},
+          "c": ("Seek personalized advice from local irrigation experts based on current soil data", "Q2", -1)},
 
-    "Q2": {"a": ("Estimate soil moisture from visual inspections", "Q3", -1),
+   "Q2": {"a": ("Estimate soil moisture from visual inspections", "Q3", -1),
 
-           "b": ("Analyze plant stress indicators", "Q5", +2),
+          "b": ("Analyze plant stress indicators", "Q5", +2),
 
-           "c": ("Use historical weather patterns to predict irrigation needs", "Q4", +1)},
+          "c": ("Use historical weather patterns to predict irrigation needs", "Q4", +1)},
 
-    "Q3": {"a": ("Choose the system that meets your minimum functional requirements at the lowest cost", "Q7", +2),
+   "Q3": {"a": ("System that meets your minimum functional requirements at the lowest cost", "Q7", +2),
 
-           "b": ("Consider systems with automation and weather tracking for long-term efficiency", "Q4", -1),
+          "b": ("Systems with automation and weather tracking for long-term efficiency", "Q4", -1),
 
-           "c": ("Evaluate ease of maintenance and operation to minimize future service costs", "Q6", +1)},
+          "c": ("Ease of maintenance and operation to minimize future service costs", "Q6", +1)},
 
-    "Q4": {"a": ("Implement irrigation systems that dynamically adjust to hyper-local weather data", "Q10", +2),
+   "Q4": {"a": ("Adjust irrigation systems to use water more effectively based on soil capacity", "Q10", +2),
 
-           "b": ("Establish routine scheduled irrigation practices, monitoring weather forecasts", "Q5", -1),
+          "b": ("Maintain a fixed irrigation routine regardless of soil type", "Q5", -1),
 
-           "c": ("Establish advanced predictive analytics for comprehensive climatic trend analysis", "Q8", +1)},
+          "c": ("Tailor water usage predictions to seasonal variations and soil characteristics", "Q8", +1)},
 
-    "Q5": {"a": ("Schedule regular preventive maintenance to optimize system performance", "Q11", +2),
+   "Q5": {"a": ("Schedule regular preventive maintenance to optimize system performance", "Q11", +2),
 
-           "b": ("Perform reactive maintenance by addressing system failures as they occur", "Q6", -1),
+          "b": ("Perform reactive maintenance by addressing system failures as they occur", "Q6", -1),
 
-           "c": ("Update software systems and conduct basic inspections annually", "Q9", +1)},
+          "c": ("Update software systems and conduct basic inspections annually", "Q9", +1)},
 
-    "Q6": {"a": ("Maintain a consistent irrigation schedule based on historical averages", "Q7", -1),
+   "Q6": {"a": ("Maintain a consistent irrigation schedule based on historical averages", "Q7", -1),
 
-           "b": ("Adjust dynamically based on soil moisture and plant stress data", "Q11", +2),
+          "b": ("Adjust dynamically based on soil moisture and plant stress data", "Q11", +2),
 
-           "c": ("Incorporate weather forecast adjustments along with a baseline irrigation schedule", "Q8", +1)},
+          "c": ("Incorporate weather forecast adjustments along with a baseline irrigation schedule", "Q8", +1)},
 
-    "Q7": {"a": ("Utilize subsurface drip irrigation for precise water delivery to plant root zones", "Q12", +2),
+   "Q7": {"a": ("Utilize subsurface drip irrigation for precise water delivery to plant root zones", "Q12", +2),
 
-           "b": ("Employ overhead sprinklers with even water distribution across the field", "Q10", +1),
+          "b": ("Employ overhead sprinklers with even water distribution across the field", "Q10", +1),
 
-           "c": ("Implement furrow irrigation for efficient water delivery along furrows", "Q8", -1)},
+          "c": ("Implement furrow irrigation for efficient water delivery along furrows", "Q8", -1)},
 
-    "Q8": {"a": ("Disregard risks and follow standard irrigation volume", "Q9", -1),
+   "Q8": {"a": ("Increase in runoff and reduced water infiltration, wasting water and potential nutrient leaching", "Q9", -1),
 
-           "b": ("Address risks of over-watering and waterlogging", "Q13", +2),
+          "b": ("Waterlogging of the root zone, leading to reduced oxygen availability and potential root damage", "Q13", +2),
 
-           "c": ("Optimize based on recent field capacity measurements", "Q12", +1)},
+          "c": ("Inefficient use of water resources, potentially leading to unnecessary irrigation expenses", "Q12", +1)},
 
-    "Q9": {"a": ("To ensure efficient delivery at varied pressures", "Q15", +2),
+   "Q9": {"a": ("Ensure uniform and efficient water distribution across various pressure settings", "Q15", +2),
 
-           "b": ("To minimize system maintenance needs", "Q14", +1),
+          "b": ("Reduce the frequency and cost of maintenance by operating reliably under varying conditions", "Q14", +1),
 
-           "c": ("Use standard pumps without custom settings", "Q10", -1)},
+          "c": ("Rely on generic pumps that may not be optimized for specific irrigation needs", "Q10", -1)},
 
-    "Q10": {"a": ("Ignore weather forecasts and rely on set schedules", "Q11", -1),
+   "Q10": {"a": ("Disregard rainfall forecasts and continue with preset irrigation schedules", "Q11", -1),
 
-            "b": ("Incorporate rainfall predictions into planning", "Q17", +2),
+           "b": ("Use rainfall forecasts to adjust irrigation volumes and timings to prevent overwatering", "Q17", +2),
 
-            "c": ("Adjust plans based on soil saturation levels", "Q16", +1)},
+           "c": ("Modify irrigation strategies based on recent rainfall events and soil moisture data", "Q16", +1)},
 
-    "Q11": {"a": ("Reviewing local irrigation guidelines and adapting as necessary", "Q18", +1),
+   "Q11": {"a": ("Failing to account for variations in water pressure and flow requirements across different zones", "Q18", +1),
 
-            "b": ("Ignoring variations in soil types across fields", "Q12", -1),
+           "b": ("Neglecting to consider soil type variability, leading to uneven water distribution", "Q12", -1),
 
-            "c": ("Analyzing historical crop response data to refine practices", "Q19", +2)},
+           "c": ("Not adjusting nozzle types and spacing based on crop type and growth stage requirements", "Q19", +2)},
 
-    "Q12": {"a": ("Upgrade to variable speed drive pumps for better energy efficiency", "Q20", +2),
+   "Q12": {"a": ("Enhanced energy efficiency by adjusting motor speed to demand, reducing power use", "Q20", +2),
 
-            "b": ("Continue using older, less efficient pump technology", "Q13", -1),
+           "b": ("Continue with fixed-speed pumps, which often offer less flexibility and efficiency", "Q13", -1),
 
-            "c": ("Implement automated water flow sensors to adjust rates", "Q10", +1)},
+           "c": ("Allow for precise control of water flow, adapting to changes in irrigation needs", "Q10", +1)},
 
-    "Q13": {"a": ("Increase watering frequency during periods of high heat", "Q22", +2),
+   "Q13": {"a": ("Adjust irrigation frequency and volume to match increased water loss from plants and soil", "Q22", +2),
 
-            "b": ("Maintain a constant irrigation schedule regardless of weather", "Q14", -1),
+           "b": ("Continue with a regular irrigation timetable without adjusting for climatic changes", "Q14", -1),
 
-            "c": ("Use evapotranspiration data to guide irrigation timing", "Q21", +1)},
+           "c": ("Incorporate real-time evapotranspiration rates into irrigation planning to optimize water use", "Q21", +1)},
 
-    "Q14": {"a": ("Schedule inspections after any significant weather events", "Q23", +1),
+   "Q14": {"a": ("Perform preventative maintenance after significant weather events to ensure system functionality", "Q23", +1),
 
-            "b": ("Check irrigation equipment regularly to prevent failures", "Q24", +2),
+           "b": ("To detect and rectify issues early, preventing costly downtime and repairs", "Q24", +2),
 
-            "c": ("Only check systems when visible problems occur", "Q15", -1)},
+           "c": ("Inspect systems only in response to evident issues, risking the escalation of undetected problems", "Q15", -1)},
 
-    "Q15": {"a": ("Assess the water availability and regulatory constraints first", "Q26", +2),
+   "Q15": {"a": ("Evaluate local water resources and compliance with water usage regulations", "Q26", +2),
 
-            "b": ("Choose an irrigation system based on lowest cost", "Q16", -1),
+           "b": ("Prioritize the initial cost of the system before considering efficiency or suitability", "Q16", -1),
 
-            "c": ("Consider future scalability and potential technological upgrades", "Q25", +1)},
+           "c": ("Plan for the system’s future expansion and integration with new irrigation technologies", "Q25", +1)},
 
-    "Q16": {"a": ("Evaluate the uniformity of water distribution in current systems", "Q27", +2),
+   "Q16": {"a": ("Sprinkler systems distribute water over large areas while; drip systems provide more controlled and consistent delivery directly to plant root zones", "Q27", +2),
 
-            "b": ("Assume all systems are equally effective regardless of design", "Q17", -1),
+           "b": ("All systems are equally effective regardless of design", "Q17", -1),
 
-            "c": ("Research new irrigation technologies for potential implementation", "Q26", +1)},
+           "c": ("Examine technological enhancements in systems that improve precision in water delivery, adjusting to field and crop needs", "Q26", +1)},
 
-    "Q17": {"a": ("Adjust settings based on soil composition and permeability", "Q29", +2),
+   "Q17": {"a": ("Adjust settings based on soil composition and permeability", "Q29", +2),
 
-            "b": ("Set a uniform irrigation schedule for all soil types", "Q18", -1),
+           "b": ("Set a uniform irrigation schedule for all soil types", "Q18", -1),
 
-            "c": ("Monitor soil moisture levels closely to avoid over-irrigation", "Q28", +1)},
+           "c": ("Monitor soil moisture levels closely to avoid over-irrigation", "Q28", +1)},
 
-    "Q18": {"a": ("Implement rain sensors to halt irrigation during downpours", +2),
+   "Q18": {"a": ("Implement rain sensors to halt irrigation during downpours", +2),
 
-            "b": ("Continue irrigation during rain to ensure schedule adherence", "Q19", -1),
+           "b": ("Continue irrigation during rain to ensure schedule adherence", "Q19", -1),
 
-            "c": ("Use drought-resistant plants to reduce water needs", "Q30", +1)},
+           "c": ("Use drought-resistant plants to reduce water needs", "Q30", +1)},
 
-    "Q19": {"a": ("Collect runoff water for reuse in irrigation", +1),
+   "Q19": {"a": ("Collect runoff water for reuse in irrigation", +1),
 
-            "b": ("Increase irrigation rates to promote deeper root growth", "Q20", -1),
+           "b": ("Increase irrigation rates to promote deeper root growth", "Q20", -1),
 
-            "c": ("Integrate drip irrigation systems to reduce runoff", +2)},
+           "c": ("Integrate drip irrigation systems to reduce runoff", +2)},
 
-    "Q20": {"a": ("Use a single pressure setting for simplicity", "Q21", -1),
+   "Q20": {"a": ("Use a single pressure setting for simplicity", "Q21", -1),
 
-            "b": ("Ensure that irrigation pressures are optimized for each crop type", +2),
+           "b": ("Ensure that irrigation pressures are optimized for each crop type", +2),
 
-            "c": ("Regularly test system pressure to detect any discrepancies", +1)},
+           "c": ("Regularly test system pressure to detect any discrepancies", +1)},
 
-    "Q21": {"a": ("Disregard soil temperature as a non-significant factor", "Q22", -1),
+   "Q21": {"a": ("Soil temperature is a non-significant factor", "Q22", -1),
 
-            "b": ("Consider adjusting irrigation based on daily temperature fluctuations", +1),
+           "b": ("Higher soil temperatures increase evaporation and plant transpiration rates, requiring more frequent irrigation", +1),
 
-            "c": ("Calibrate irrigation systems to respond automatically to temperature sensors", +2)},
+           "c": ("Soil temperature variations affect water uptake by roots, necessitating adjustments in irrigation timing and volume for optimal growth", +2)},
 
-    "Q22": {"a": ("Reduce irrigation frequency during wet seasons", +1),
+   "Q22": {"a": ("Reduce irrigation frequency during wet seasons", +1),
 
-            "b": ("Enhance soil drainage systems to cope with excess water", +2),
+           "b": ("Enhance soil drainage systems to cope with excess water", +2),
 
-            "c": ("Maintain a steady irrigation routine throughout the year", "Q23", -1)},
+           "c": ("Maintain a steady irrigation routine throughout the year", "Q23", -1)},
 
-    "Q23": {"a": ("Optimize schedules to water during the cooler parts of the day", +2),
+   "Q23": {"a": ("Optimize schedules to water during the cooler parts of the day", +2),
 
-            "b": ("Stick to a fixed watering schedule to simplify management", "Q24", -1),
+           "b": ("Stick to a fixed watering schedule to simplify management", "Q24", -1),
 
-            "c": ("Increase watering during hot periods to reduce plant stress", +1)},
+           "c": ("Increase watering during hot periods to reduce plant stress", +1)},
 
-    "Q24": {"a": ("Adjust the irrigation equipment setup based on seasonal observations", +2),
+   "Q24": {"a": ("Optimize equipment setup seasonally to adapt to changing crop needs and environmental conditions", +2),
 
-            "b": ("Keep the irrigation setup consistent year-round", "Q25", -1),
+           "b": ("Keep the irrigation setup consistent year-round", "Q25", -1),
 
-            "c": ("Periodically review and tweak equipment settings for efficiency", +1)},
+           "c": ("Regularly review and tweak equipment settings for efficiency", +1)},
 
-    "Q25": {"a": ("Choose early morning hours to minimize evaporation losses", +2),
+   "Q25": {"a": ("Choose early morning hours to minimize evaporation losses", +2),
 
-            "b": ("Irrigate at noon to coincide with peak sun and heat", "Q29", "Q26", -1),
+           "b": ("Irrigate at noon to coincide with peak sun and heat", "Q29", "Q26", -1),
 
-            "c": ("Alternate irrigation times weekly to test different efficiencies", +1)},
+           "c": ("Alternate irrigation times weekly to test different efficiencies", +1)},
 
-    "Q26": {"a": ("Customize irrigation based on specific crop water needs", +2),
+   "Q26": {"a": ("Customize irrigation based on specific crop water needs", +2),
 
-            "b": ("Apply the same amount of water regardless of the crop type", "Q27", -1),
+           "b": ("Apply the same amount of water regardless of the crop type", "Q27", -1),
 
-            "c": ("Focus on the most economically feasible option", +1)},
+           "c": ("Consider crop profitability to ensure economic sustainability while meeting basic water needs", +1)},
 
-    "Q27": {"a": ("Minimize irrigation to encourage deeper root systems", +2),
+   "Q27": {"a": ("Excessive minimization of irrigation could stress plants, forcing roots to extend deeper, which might not always be beneficial", +2),
 
-            "b": ("Over-irrigate to ensure soil is always saturated", "Q28", -1),
+           "b": ("Consistent over-irrigation leads to soil saturation, reducing aeration and potentially causing root rot and nutrient leaching", "Q28", -1),
 
-            "c": ("Balance water application based on soil health indicators", +1)},
+           "c": ("Adjusting water application based on indicators like soil moisture and plant health can maintain optimal soil conditions", +1)},
 
-    "Q28": {"a": ("Plan irrigation frequency based on the plant growth stages", +2),
+   "Q28": {"a": ("Adjust irrigation frequency based on the plant growth stages", +2),
 
-            "b": ("Ignore plant growth stages in scheduling irrigation", "Q29", -1),
+           "b": ("Disregard the varying needs for water during different plant growth stages", "Q29", -1),
 
-            "c": ("Use generic irrigation schedules regardless of plant growth", -1)},
+           "c": ("Use generic irrigation schedules regardless of plant growth", -1)},
 
-    "Q29": {"a": ("Implement soil moisture sensors to automate irrigation", +2),
+   "Q29": {"a": ("Employ evapotranspiration models to adjust irrigation based on climatic conditions and plant water requirements", +2),
 
-            "b": ("Depend solely on manual checking for soil moisture", -1),
+           "b": ("Use irrigation schedules without adapting to changes in weather or crop stages", -1),
 
-            "c": ("Use timed irrigation without soil moisture checks", -1)},
+           "c": ("Use timed irrigation without soil moisture checks", -1)},
 
-    "Q30": {"a": ("Conduct thorough cleaning and maintenance at season's end", +2),
+   "Q30": {"a": ("Conduct thorough cleaning and maintenance at season's end", +2),
 
-            "b": ("Perform minimal maintenance and prepare for unexpected repairs", -1),
+           "b": ("Perform minimal maintenance and prepare for unexpected repairs", -1),
 
-            "c": ("Delay all maintenance until operational issues occur", -1)}
+           "c": ("Delay all maintenance until operational issues occur", -1)}
+
 }
 
 
@@ -602,252 +635,314 @@ def page_farm(questions, options, page_name):
 ## Finance
 
 #######################################################################################################################
+
 finance_questions = {
-      "Q1": "What is the primary factor to consider when planning for retirement savings?",
 
-      "Q2": "What is the best strategy to manage a financial windfall, such as an inheritance?",
+     "Q1": "What is the primary factor to consider when planning for retirement savings?",
 
-      "Q3": "How should an investor adjust his/her portfolio in response to a major stock market correction?",
 
-      "Q4": "What critical factor should be considered before investing in high-yield bonds?",
 
-      "Q5": "What is a prudent approach to managing significant credit card debt?",
+     "Q2": "What is the best strategy to manage a financial windfall, such as an inheritance?",
 
-      "Q6": "How should personal investments be adjusted in anticipation of rising inflation?",
 
-      "Q7": "As a university student managing your finances, what is the most beneficial strategy for saving for future educational expenses?",
 
-      "Q8": "What should be prioritized when creating a long-term financial plan?",
+     "Q3": "How should an investor adjust his/her portfolio in response to a major stock market correction?",
 
-      "Q9": "How can one optimize their investment portfolio for tax efficiency?",
 
-      "Q10": "What is a key consideration when selecting a life insurance policy?",
 
-      "Q11": "What strategy can young adults adopt to manage their assets and minimize future tax liabilities?",
+     "Q4": "What critical factor should be considered before investing in high-yield bonds?",
 
-      "Q12": "How can one ensure adequate diversification in their investment portfolio?",
 
-      "Q13": "What is the best way to approach debt consolidation?",
 
-      "Q14": "How should one decide between investing in a Roth IRA versus a traditional IRA?",
+     "Q5": "What is a wise approach to managing significant credit card debt?",
 
-      "Q15": "What are the risks associated with investing in emerging markets?",
 
-      "Q16": "What factors should be considered when planning to buy versus rent a home?",
 
-      "Q17": "What is an effective strategy for managing a personal budget?",
+     "Q6": "How should personal investments be adjusted in anticipation of rising inflation?",
 
-      "Q18": "How should one evaluate the decision to refinance a mortgage?",
 
-      "Q19": "What strategy should be prioritized when launching a new business to mitigate initial risks?",
 
-      "Q20": "How does one determine the right amount of emergency savings?",
+     "Q7": "As a university student managing your finances, what is the most beneficial strategy for saving for future educational expenses?",
 
-      "Q21": "What steps should be taken to protect one's financial information online?",
 
-      "Q22": "How should one assess the impact of economic recession on personal finances?",
 
-      "Q23": "Which approach can significantly enhance the efficiency of paying off student loans?",
+     "Q8": "What should be prioritized when creating a long-term financial plan?",
 
-      "Q24": "What are effective strategies for leveraging real estate to build wealth?",
 
-      "Q25": "What factors should influence the asset allocation in a retirement portfolio?",
 
-      "Q26":  "As a young professional, how should you revise your financial goals following significant life changes, such as a new job or moving to a new city?",
+     "Q9": "How can one optimize their investment portfolio for tax efficiency?",
 
-      "Q27": "What should be factored into retirement planning to effectively manage future healthcare costs?",
 
-      "Q28": "When is it okay to accept higher investment fees?",
 
-      "Q29": "What is the most effective way to utilize credit scores for securing low-interest loans?",
+     "Q10": "What is a key consideration when selecting a life insurance policy?",
 
-      "Q30": "What key step should not be overlooked in a financial risk management plan?",
 
-  }
+
+     "Q11": "What strategy can young adults adopt to manage their assets and minimize future tax liabilities?",
+
+
+
+     "Q12": "How can one ensure adequate diversification in their investment portfolio?",
+
+
+
+     "Q13": "What is the best way to approach debt consolidation?",
+
+
+
+     "Q14": "How should one decide between investing in a Roth IRA versus a traditional IRA?",
+
+
+
+     "Q15": "What are the risks associated with investing in emerging markets?",
+
+
+
+     "Q16": "What factors should be considered when planning to buy versus rent a home?",
+
+
+
+     "Q17": "What is an effective strategy for managing a personal budget?",
+
+
+
+     "Q18": "How should one evaluate the decision to refinance a mortgage?",
+
+
+
+     "Q19": "What strategy should be prioritized when launching a new business to mitigate initial risks?",
+
+
+
+     "Q20": "How does one determine the right amount of emergency savings?",
+
+
+
+     "Q21": "What steps should be taken to protect one's financial information online?",
+
+
+
+     "Q22": "How should one assess the impact of economic recession on personal finances?",
+
+
+
+     "Q23": "Which approach can significantly enhance the efficiency of paying off student loans?",
+
+
+
+     "Q24": "What are effective strategies for leveraging real estate to build wealth?",
+
+
+
+     "Q25": "What factors should influence the asset allocation in a retirement portfolio?",
+
+
+
+     "Q26":  "As a young professional, how should you revise your financial goals following significant life changes, such as a new job or moving to a new city?",
+
+
+
+     "Q27": "What should be factored into retirement planning to effectively manage future healthcare costs?",
+
+
+
+     "Q28": "When is it okay to accept higher investment fees?",
+
+
+
+     "Q29": "What is the most effective way to utilize credit scores for securing low-interest loans?",
+
+
+
+     "Q30": "What key step should not be overlooked in a financial risk management plan?",
+
+
+
+ }
+
 
 finance_options = {
+     "Q1": {"a": ("Maximize contributions to tax-deferred accounts", "Q4", +2),
 
-      "Q1": {"a": ("Maximize contributions to tax-deferred accounts", "Q4", +2),
+            "b": ("Invest in a diverse portfolio of stocks", "Q3", +1),
 
-             "b": ("Invest in a diverse portfolio of stocks", "Q3", +1),
+            "c": ("Purchase annuities for guaranteed income", "Q2", -1)},
 
-             "c": ("Purchase annuities for guaranteed income", "Q2", -1)},
+     "Q2": {"a": ("Invest entirely in a diversified stock portfolio", "Q3",-1),
 
-      "Q2": {"a": ("Invest entirely in a diversified stock portfolio", "Q3",-1),
+            "b": ("Allocate to an emergency fund, then invest the rest", "Q5", +2),
 
-             "b": ("Allocate to an emergency fund, then invest the rest", "Q5", +2),
+            "c": ("Pay off existing debt, then save the remainder", "Q4", +1)},
 
-             "c": ("Pay off existing debt, then save the remainder", "Q4", +1)},
+     "Q3": {"a": ("Rebalance to maintain original asset allocation and risk profile", "Q7", +2),
 
-      "Q3": {"a": ("Rebalance to maintain original asset allocation and risk profile", "Q7", +2),
+            "b": ("Shift a portion to more conservative investments, such as bonds, to mitigate risk","Q4", -1),
 
-             "b": ("Shift a portion to more conservative investments, such as bonds, to mitigate risk","Q4", -1),
+            "c": ("Identify and invest in stocks that may now be undervalued" "Q6", +1)},
 
-             "c": ("Identify and invest in stocks that may now be undervalued" "Q6", +1)},
+     "Q4": {"a": ("Assess the credit risk and maturity period", "Q10", +2),
 
-      "Q4": {"a": ("Assess the credit risk and maturity period", "Q10", +2),
+            "b": ("Focus on the potential returns not risks", "Q5", -1),
 
-             "b": ("Focus on the potential returns not risks", "Q5", -1),
+            "c": ("Choose bonds with the highest yield", "Q8", +1)},
 
-             "c": ("Choose bonds with the highest yield", "Q8", +1)},
+     "Q5": {"a": ("Consolidate debt through a personal loan", "Q11", +2),
 
-      "Q5": {"a": ("Consolidate debt through a personal loan", "Q11", +2),
+            "b": ("Only make minimum payments to manage cash flow", "Q6", -1),
 
-             "b": ("Only make minimum payments to manage cash flow", "Q6", -1),
+            "c": ("Transfer balances to a zero-interest card", "Q9", +1)},
 
-             "c": ("Transfer balances to a zero-interest card", "Q9", +1)},
+     "Q6": {"a": ("Increase allocations to inflation-resistant assets like real estate and commodities", "Q11", +2),
 
-      "Q6": {"a": ("Increase allocations to inflation-resistant assets like real estate and commodities", "Q11", +2),
+            "b": ("Convert a portion of investments to cash to manage potential market downturns", "Q7", -1),
 
-             "b": ("Convert a portion of investments to cash to manage potential market downturns", "Q7", -1),
+            "c": ("Adjust investment ratios subtly while monitoring economic indicators closely", "Q8", +1)},
 
-             "c": ("Adjust investment ratios subtly while monitoring economic indicators closely", "Q8", +1)},
+     "Q7": {"a": ("Utilize a savings plan like a 529 that provides tax advantages and educational expense flexibility", "Q12", +2),
 
-      "Q7": {"a": ("Utilize a savings plan like a 529 that provides tax advantages and educational expense flexibility", "Q12", +2),
+            "b": ("Allocate a portion of investments into mutual funds specifically designated for educational purposes", "Q10", +1),
 
-             "b": ("Allocate a portion of investments into mutual funds specifically designated for educational purposes", "Q10", +1),
+            "c": ("Plan on leveraging scholarships and student loans to cover educational costs", "Q8", -1)},
 
-             "c": ("Plan on leveraging scholarships and student loans to cover educational costs", "Q8", -1)},
+     "Q8": {"a": ("Focus on accumulating assets ignoring liabilities", "Q9", -1),
 
-      "Q8": {"a": ("Focus on accumulating assets ignoring liabilities", "Q9", -1),
+            "b": ("Balance between saving, investing, and debt repayment", "Q13", +2),
 
-             "b": ("Balance between saving, investing, and debt repayment", "Q13", +2),
+            "c": ("Prioritize high-risk, high-return investments", "Q12", +1)},
 
-             "c": ("Prioritize high-risk, high-return investments", "Q12", +1)},
+     "Q9": {"a": ("Invest in tax-exempt municipal bonds", "Q15", +2),
 
-      "Q9": {"a": ("Invest in tax-exempt municipal bonds", "Q15", +2),
+            "b": ("Maximize contributions to retirement accounts", "Q14", +1),
 
-             "b": ("Maximize contributions to retirement accounts", "Q14", +1),
+            "c": ("Avoid selling assets to reduce capital gains", "Q10", -1)},
 
-             "c": ("Avoid selling assets to reduce capital gains", "Q10", -1)},
+     "Q10": {"a": ("Opt for the policy offering the most affordable premiums", "Q16", +1),
 
-      "Q10": {"a": ("Opt for the policy offering the most affordable premiums", "Q16", +1),
+             "b": ("Assess policies based on coverage depth, terms, and insurer reliability", "Q17", +2),
 
-              "b": ("Assess policies based on coverage depth, terms, and insurer reliability", "Q17", +2),
+             "c": ("Choose a policy recommended by trusted family or financial advisors", "Q11", -1)},
 
-              "c": ("Choose a policy recommended by trusted family or financial advisors", "Q11", -1)},
+     "Q11": {"a": ("Establish a trust to protect assets and minimize taxes", "Q18", +2),
 
-      "Q11": {"a": ("Establish a trust to protect assets and minimize taxes", "Q18", +2),
+             "b": ("Distribute assets equally among heirs without tax planning", "Q12", -1),
 
-              "b": ("Distribute assets equally among heirs without tax planning", "Q12", -1),
+             "c": ("Incorporate life insurance to manage future tax burdens on assets", "Q18", +1)},
 
-              "c": ("Incorporate life insurance to manage future tax burdens on assets", "Q18", +1)},
+     "Q12": {"a": ("Invest in a mix of domestic and international funds", "Q20", +2),
 
-      "Q12": {"a": ("Invest in a mix of domestic and international funds", "Q20", +2),
+             "b": ("Focus solely on high-growth tech stocks", "Q13", -1),
 
-              "b": ("Focus solely on high-growth tech stocks", "Q13", -1),
+             "c": ("Keep all investments in bonds for safety", "Q19", +1)},
 
-              "c": ("Keep all investments in bonds for safety", "Q19", +1)},
+     "Q13": {"a": ("Combine all debts into one low-interest loan", "Q22", +2),
 
-      "Q13": {"a": ("Combine all debts into one low-interest loan", "Q22", +2),
+             "b": ("Pay off each debt separately to track progress", "Q21", +1),
 
-              "b": ("Pay off each debt separately to track progress", "Q21", +1),
+             "c": ("Take out a home equity loan to pay off credit card debt", "Q14", -1)},
 
-              "c": ("Take out a home equity loan to pay off credit card debt", "Q14", -1)},
+     "Q14": {"a": ("Invest based on tax implications now and expected income at retirement", "Q24", +2),
 
-      "Q14": {"a": ("Invest based on tax implications now and expected income at retirement", "Q24", +2),
+             "b": ("Choose based on the advice of a financial advisor", "Q23", +1),
 
-              "b": ("Choose based on the advice of a financial advisor", "Q23", +1),
+             "c": ("Opt for traditional IRA for immediate tax relief", "Q15", -1)},
 
-              "c": ("Opt for traditional IRA for immediate tax relief", "Q15", -1)},
+     "Q15": {"a": ("Evaluate political and economic stability before investing", "Q26", +2),
 
-      "Q15": {"a": ("Evaluate political and economic stability before investing", "Q26", +2),
+            "b": ("Invest small amounts regardless of market conditions", "Q16", -1),
 
-              "b": ("Invest small amounts regardless of market conditions", "Q16", -1),
+             "c": ("Focus on sectors with potential for quick growth", "Q25", +1)},
 
-              "c": ("Focus on sectors with potential for quick growth", "Q25", +1)},
+     "Q16": {"a": ("Consider long-term financial goals and real estate market trends", "Q27", +2),
 
-      "Q16": {"a": ("Consider long-term financial goals and real estate market trends", "Q27", +2),
+             "b": ("Always prefer to rent for financial flexibility", "Q17", -1),
 
-              "b": ("Always prefer to rent for financial flexibility", "Q17", -1),
+             "c": ("Buy a home when the mortgage is less than rent", "Q26", +1)},
 
-              "c": ("Buy a home when the mortgage is less than rent", "Q26", +1)},
+     "Q17": {"a": ("Track income and expenses strictly and adjust as needed", "Q29", +2),
 
-      "Q17": {"a": ("Track income and expenses meticulously and adjust as needed", "Q29", +2),
+             "b": ("Set a fixed budget and stick to it regardless of changes in income", "Q28", +1),
 
-              "b": ("Set a fixed budget and stick to it regardless of changes in income", "Q28", +1),
+             "c": ("Prioritize expenses based on immediate needs only","Q18", -1)},
 
-              "c": ("Prioritize expenses based on immediate needs only","Q18", -1)},
+     "Q18": {"a": ("Refinance only when it leads to substantial immediate monthly savings", "Q19", -1),
 
-      "Q18": {"a": ("Refinance only when it leads to substantial immediate monthly savings", "Q19", -1),
+             "b": ("Consider refinancing when there's a significant decrease in interest rates", "Q30", +1),
 
-              "b": ("Consider refinancing when there's a significant decrease in interest rates", "Q30", +1),
+             "c": ("Evaluate the benefits of a longer-term loan regardless of immediate market fluctuations", +2)},
 
-              "c": ("Evaluate the benefits of a longer-term loan regardless of immediate market fluctuations", +2)},
+     "Q19": {"a": ("Thoroughly analyse market demand and scalability prospects", +1),
 
-      "Q19": {"a": ("Thoroughly analyse market demand and scalability prospects", +1),
+             "b": ("Begin with a lean startup approach, minimising initial costs and expanding gradually", +2),
 
-              "b": ("Begin with a lean startup approach, minimising initial costs and expanding gradually", +2),
+             "c": ("Target a niche market, minimizing the impact of competitors", "Q20", -1)},
 
-              "c": ("Target a niche market, minimizing the impact of competitors", "Q20", -1)},
+     "Q20": {"a": ("Set aside 6-12 months of expenses depending on job stability", +2),
 
-      "Q20": {"a": ("Set aside 6-12 months of expenses depending on job stability", +2),
+             "b": ("Save a flat rate monthly regardless of overall expenses", "Q21", -1),
 
-              "b": ("Save a flat rate monthly regardless of overall expenses", "Q21", -1),
+             "c": ("Adjust savings based on current economic conditions", +1)},
 
-              "c": ("Adjust savings based on current economic conditions", +1)},
+     "Q21": {"a": ("Use unique passwords and two-factor authentication for all financial accounts", +2),
 
-      "Q21": {"a": ("Use unique passwords and two-factor authentication for all financial accounts", +2),
+             "b": ("Regularly monitor financial statements for unauthorized transactions", +1),
 
-              "b": ("Regularly monitor financial statements for unauthorized transactions", +1),
+             "c": ("Rely on bank security measures and fraud protection services", "Q22", -1)},
 
-              "c": ("Rely on bank security measures and fraud protection services", "Q22", -1)},
+     "Q22": {"a": ("Focus on enhancing liquidity through increased cash holdings and similar assets", +1),
 
-      "Q22": {"a": ("Focus on enhancing liquidity through increased cash holdings and similar assets", +1),
+             "b": ("Seize the opportunity to buy undervalued assets while continuing regular investment activities", +2),
 
-              "b": ("Seize the opportunity to buy undervalued assets while continuing regular investment activities", +2),
+             "c": ("Shift investments towards sectors typically resistant to economic downturns, such as utilities and consumer staples", "Q23", -1)},
 
-              "c": ("Shift investments towards sectors typically resistant to economic downturns, such as utilities and consumer staples", "Q23", -1)},
+     "Q23": {"a": ("Focus on eliminating loans with the highest interest rates first to minimize overall interest costs", +2),
 
-      "Q23": {"a": ("Focus on eliminating loans with the highest interest rates first to minimize overall interest costs", +2),
+             "b": ("Opt for income-based repayment plans that adjust payments according to your financial situation", +1),
 
-              "b": ("Opt for income-based repayment plans that adjust payments according to your financial situation", +1),
+             "c": ("Consolidate multiple student loans into a single payment for better management and potentially lower rates", "Q24", -1)},
 
-              "c": ("Consolidate multiple student loans into a single payment for better management and potentially lower rates", "Q24", -1)},
+     "Q24": {"a": ("Acquire residential properties in urban areas for long-term rental income", +1),
 
-      "Q24": {"a": ("Acquire residential properties in urban centres for long-term rental income", +1),
+             "b": ("Invest in vacation homes that can be rented out on a short-term basis", +2),
 
-              "b": ("Invest in vacation homes that can be rented out on a short-term basis", +2),
+             "c": ("Engage in house flipping, targeting properties that can be quickly renovated and sold at a profit", "Q25", -1)},
 
-              "c": ("Engage in house flipping, targeting properties that can be quickly renovated and sold at a profit", "Q25", -1)},
+     "Q25": {"a": ("Shift more towards bonds and stable investments as retirement approaches", +2),
 
-      "Q25": {"a": ("Shift more towards bonds and stable investments as retirement approaches", +2),
+             "b": ("Maintain a high proportion of stocks for growth", +1),
 
-              "b": ("Maintain a high proportion of stocks for growth", +1),
+             "c": ("Invest heavily in emerging markets for potentially high returns", "Q26", -1)},
 
-              "c": ("Invest heavily in emerging markets for potentially high returns", "Q26", -1)},
+     "Q26": {"a": ("Assess and realign your savings and investment strategies to better suit your updated life circumstances", +2),
 
-      "Q26": {"a": ("Assess and realign your savings and investment strategies to better suit your updated life circumstances", +2),
+             "b": ("Continue with your existing financial strategies to avoid disruption", "Q27", -1),
 
-              "b": ( "Continue with your existing financial strategies to avoid disruption", "Q27", -1),
+             "c": ("Prioritize immediate financial needs and adjust long-term aspirations as your situation stabilises", +1)},
 
-              "c": ("Prioritize immediate financial needs and adjust long-term aspirations as your situation stabilises", +1)},
+     "Q27": {"a": ("Secure long-term care insurance and explore the benefits of health savings accounts", +2),
 
-      "Q27": {"a": ("Secure long-term care insurance and explore the benefits of health savings accounts"),
+             "b": ("Rely on governmental support like Medicare to handle healthcare needs", "Q28", -1),
 
-              "b": ("Rely on governmental support like Medicare to handle healthcare needs", "Q28", -1),
+             "c": ("Establish a dedicated savings fund for unforeseen medical expenses", +1)},
 
-              "c": ("Establish a dedicated savings fund for unforeseen medical expenses", +1)},
+     "Q28": {"a": ("If the fund consistently beats the market, fees included", +1),
 
-      "Q28": {"a": ("If the fund consistently beats the market, fees included", +1),
+             "b": ("If the fund is managed by highly successful managers", "Q29", -1),
 
-              "b": ("If the fund is managed by highly successful managers", "Q29", -1),
+             "c": ("If the returns after fees meet your investment goals", +2)},
 
-              "c": ("If the returns after fees meet your investment goals", +2)},
+     "Q29": {"a": ("Regularly review and optimise credit reports for accuracy", +2),
 
-      "Q29": {"a": ("Regularly review and optimise credit reports for accuracy", +2),
+             "b": ("Focus on high credit utilisation to demonstrate creditworthiness", "Q30", -1),
 
-              "b": ("Focus on high credit utilisation to demonstrate creditworthiness", "Q30", -1),
+             "c": ("Apply for multiple credit lines to increase available credit", +1)},
 
-              "c": ("Apply for multiple credit lines to increase available credit", +1)},
+     "Q30": {"a": ("Expand your portfolio across different types of investments for risk spread", +1),
 
-      "Q30": {"a": ("Expand your portfolio across different types of investments for risk spread", +1),
+             "b": ("Invest in opportunities that promise high returns despite the higher risk", -1),
 
-              "b": ("Invest in opportunities that promise high returns despite the higher risk", -1),
+             "c": ("Ensure adequate insurance coverage to protect against unforeseen financial losses", +2)}
 
-              "c": ("Ensure adequate insurance coverage to protect against unforeseen financial losses", +2)}
-
-  }
+ }
 
 
 #######################################################################################################################
@@ -857,253 +952,313 @@ finance_options = {
 #######################################################################################################################
 health_questions = {
 
-  "Q1": "Considering the multifaceted nature of obesity, what is often the most influential factor in the prevalence of excess weight across diverse populations?",
 
-  "Q2": "In the evaluation of obesity and associated health risks, which metric provides the most widely used assessment of excess weight?",
 
-  "Q3": "What minimal percentage of weight loss significantly reduces health risks?",
+ "Q1": "Considering the varied nature of obesity, what is often the most influential factor in the occurance of excess weight across diverse populations?",
 
-  "Q4": "Considering the multifactorial nature of obesity, which factor significantly complicates individual efforts towards weight management?",
 
-  "Q5": "Which macronutrient is crucial for numerous bodily functions but should be moderated in dietary intake due to its high caloric density?",
 
-  "Q6": "Which pervasive environmental change in modern society most significantly contributes to increasing obesity rates?",
+"Q2": "In the evaluation of obesity and associated health risks, which metric provides the most widely used assessment of excess weight?",
 
-  "Q7": "Which approach is least effective for long-term weight management?",
 
-  "Q8": "Which initial action best aligns with an effective strategy for weight management?",
 
-  "Q9": "In what ways do psychological elements contribute to fluctuations in body weight?",
+ "Q3": "What minimal percentage of weight loss significantly reduces health risks?",
 
-  "Q10": "To what extent do genetics contribute to an individual's risk of developing obesity?",
 
-  "Q11": "Which type of physical activity is recommended for effective weight loss?",
 
-  "Q12": "How does optimal water consumption vary in a diet plan aimed at weight loss, considering individual physiological differences?",
+ "Q4": "Considering the multifactorial nature of obesity, which factor significantly complicates individual efforts towards weight management?",
 
-  "Q13": "What is the best practice for incorporating proteins into a balanced diet?",
 
-  "Q14": "What is the optimal strategy for integrating fats into a diet to support cardiovascular health and overall wellness?",
 
-  "Q15": "What is the primary benefit of incorporating dietary fiber into a weight loss regimen?",
+ "Q5": "Which macronutrient is crucial for numerous bodily functions but should be moderated in dietary intake due to its high caloric density?",
 
-  "Q16":  "How can increased feelings of fullness contribute to a sustainable weight management plan?",
 
-  "Q17": "What is a common but misleading perception about the effectiveness of dieting for weight loss?",
 
-  "Q18": "Which meal planning strategy best supports sustainable weight management and balanced nutrition?",
+ "Q6": "Which pervasive environmental change in modern society most significantly contributes to increasing obesity rates?",
 
-  "Q19": "When considering fats in a weight loss diet, which characteristic is most beneficial for long-term health?",
 
-  "Q20": "Which psychological strategy is most effective for maintaining long-term weight loss?",
 
-  "Q21": "What is the least helpful method to achieve and maintain a healthy weight?",
+ "Q7": "Which approach is least effective for long-term weight management?",
 
-  "Q22": "Which strategy is most recommended for a beginner to start losing weight?",
 
-  "Q23": "What is the recommended timing for surgical interventions in the treatment of obesity?",
 
-  "Q24": "What is the best initial dietary change to make when starting a weight loss plan?",
+ "Q8": "Which initial action best aligns with an effective strategy for weight management?",
 
-  "Q25": "What common dietary advice is now considered outdated?",
 
-  "Q26": "In what ways can modern technology facilitate effective weight management?",
 
-  "Q27":  "What is an essential factor to consider when selecting medications for weight loss?",
+ "Q9": "In what ways do psychological elements contribute to fluctuations in body weight?",
 
-  "Q28": "Which lifestyle change provides the most sustainable impact on weight loss?",
 
-  "Q29": "What nutritional misconception could lead to ineffective dieting?",
 
-  "Q30":  "Which approach is most effective in sustaining long-term weight management?",
+ "Q10": "To what extent do genetics contribute to an individual's risk of developing obesity?",
+
+
+
+ "Q11": "Which type of physical activity is recommended for effective weight loss?",
+
+
+
+ "Q12": "How does optimal water consumption vary in a diet plan aimed at weight loss, considering individual physiological differences?",
+
+
+
+ "Q13": "What is the best practice for incorporating proteins into a balanced diet?",
+
+
+
+ "Q14": "What is the optimal strategy for integrating fats into a diet to support cardiovascular health and overall wellness?",
+
+
+
+ "Q15": "What is the primary benefit of incorporating dietary fiber into a weight loss regimen?",
+
+
+
+ "Q16":  "How can increased feelings of fullness contribute to a sustainable weight management plan?",
+
+
+
+ "Q17": "What is a common but misleading perception about the effectiveness of dieting for weight loss?",
+
+
+
+ "Q18": "Which meal planning strategy best supports sustainable weight management and balanced nutrition?",
+
+
+
+ "Q19": "When considering fats in a weight loss diet, which characteristic is most beneficial for long-term health?",
+
+
+
+ "Q20": "Which psychological strategy is most effective for maintaining long-term weight loss?",
+
+
+
+ "Q21": "What is the least helpful method to achieve and maintain a healthy weight?",
+
+
+
+ "Q22": "Which strategy is most recommended for a beginner to start losing weight?",
+
+
+
+ "Q23": "What is the recommended timing for surgical interventions in the treatment of obesity?",
+
+
+
+ "Q24": "What is the best initial dietary change to make when starting a weight loss plan?",
+
+
+
+ "Q25": "What common dietary advice is now considered outdated?",
+
+
+
+ "Q26": "In what ways can modern technology facilitate effective weight management?",
+
+
+
+ "Q27":  "What is an essential factor to consider when selecting medications for weight loss?",
+
+
+
+ "Q28": "Which lifestyle change provides the most sustainable impact on weight loss?",
+
+
+
+ "Q29": "What nutritional misconception could lead to ineffective dieting?",
+
+
+
+ "Q30":  "Which approach is most effective in sustaining long-term weight management?",
+
+
 
 }
 
 
 health_options = {
+ "Q1": {"a": ("Biological predispositions that affect metabolic rates", "Q3", +1),
 
-  "Q1": {"a": ("Biological predispositions that affect metabolic rates", "Q3", +1),
+        "b": ("Changes in lifestyle patterns that reduce physical activity", "Q2", -1),
 
-         "b": ("Changes in lifestyle patterns that reduce physical activity", "Q2", -1),
+        "c": ("Patterns of food consumption and overall calorie management", "Q4", +2)},
 
-         "c": ("Patterns of food consumption and overall calorie management", "Q4", +2)},
+ "Q2": {"a": ("Body Mass Index (BMI), a common standard for categorizing weight relative to height", "Q7", +2),
 
-  "Q2": {"a": ("Body Mass Index (BMI), a common standard for categorizing weight relative to height", "Q7", +2),
+        "b": ("Waist-to-hip ratio, which assesses fat distribution and potential risk", "Q3", -1),
 
-         "b": ("Waist-to-hip ratio, which assesses fat distribution and potential risk", "Q3", -1),
+        "c": ("Body fat percentage, a direct measure of body composition", "Q6", +1)},
 
-         "c": ("Body fat percentage, a direct measure of body composition", "Q6", +1)},
+ "Q3": {"a": ("5% of total body weight", "Q4", -1),
 
-  "Q3": {"a": ("5% of total body weight", "Q4", -1),
+        "b": ("10% of total body weight", "Q7", +2),
 
-         "b": ("10% of total body weight", "Q7", +2),
+        "c": ("15% of total body weight", "Q6", +1)},
 
-         "c": ("15% of total body weight", "Q6", +1)},
+ "Q4": {"a": ("Personal discipline issues, including consistency in diet and exercise", "Q5", -1),
 
-  "Q4": {"a": ("Personal discipline issues, including consistency in diet and exercise", "Q5", -1),
+        "b": ("Genetic predispositions that influence metabolic rate and fat storage", "Q10", +2),
 
-         "b": ("Genetic predispositions that influence metabolic rate and fat storage", "Q10", +2),
+        "c": ("Environmental factors, such as availability of and access to healthy food options", "Q8", +1)},
 
-         "c": ("Environmental factors, such as availability of and access to healthy food options", "Q8", +1)},
+ "Q5": {"a": ("Proteins, which are vital for muscle repair and growth", "Q6", -1),
 
-  "Q5": {"a": ("Proteins, which are vital for muscle repair and growth", "Q6", -1),
+        "b": ("Fats, necessary for hormone production and nutrient absorption", "Q11", +2),
 
-         "b": ("Fats, necessary for hormone production and nutrient absorption", "Q11", +2),
+        "c": ("Carbohydrates, main source of energy for daily activities", "Q9", +1)},
 
-         "c": ("Carbohydrates, main source of energy for daily activities", "Q9", +1)},
+ "Q6": {"a": ("Increased food availability", "Q11", +2),
 
-  "Q6": {"a": ("Increased food availability", "Q11", +2),
+        "b": ("Economic factors", "Q7", -1),
 
-         "b": ("Economic factors", "Q7", -1),
+        "c": ("Technological advancements", "Q8", +1)},
 
-         "c": ("Technological advancements", "Q8", +1)},
+ "Q7": {"a": ("Following fad diets", "Q12", +2),
 
-  "Q7": {"a": ("Following fad diets", "Q12", +2),
+        "b": ("Caloric restriction", "Q8", -1),
 
-         "b": ("Caloric restriction", "Q8", -1),
+        "c": ("Sustainable lifestyle changes", "Q10", +1)},
 
-         "c": ("Sustainable lifestyle changes", "Q10", +1)},
+ "Q8": {"a": ("Setting realistic goals", "Q13", +2),
 
-  "Q8": {"a": ("Setting realistic goals", "Q13", +2),
+        "b": ("Seeking professional advice", "Q12", +1),
 
-         "b": ("Seeking professional advice", "Q12", +1),
+        "c": ("Committing to a fitness facility", "Q9", -1)},
 
-         "c": ("Committing to a fitness facility", "Q9", -1)},
+ "Q9": {"a": ("Emotional overeating", "Q15", +2),
 
-  "Q9": {"a": ("Emotional overeating", "Q15", +2),
+        "b": ("Sleep deprivation", "Q10", -1),
 
-         "b": ("Sleep deprivation", "Q10", -1),
+        "c": ("Interpersonal tensions", "Q14", +1)},
 
-         "c": ("Interpersonal tensions", "Q14", +1)},
+ "Q10": {"a": ("70% genetic influence", "Q11", -1),
 
-  "Q10": {"a": ("70% genetic influence", "Q11", -1),
+         "b": ("50% genetic influence", "Q16", +1),
 
-          "b": ("50% genetic influence", "Q16", +1),
+         "c": ("30% genetic influence", "Q17", +2)},
 
-          "c": ("30% genetic influence", "Q17", +2)},
+ "Q11": {"a": ("High-intensity steady-state cardio", "Q18", +1),
 
-  "Q11": {"a": ("High-intensity steady-state cardio", "Q18", +1),
+         "b": ("High-intensity interval training", "Q19", +2),
 
-          "b": ("High-intensity interval training", "Q19", +2),
+         "c": ("Weight training", "Q12", -1)},
 
-          "c": ("Weight training", "Q12", -1)},
+ "Q12": {"a": ("Maintain a baseline of at least 2 liters per day, potentially increasing based on factors like physical activity and overall health", "Q20", +2),
 
-  "Q12": {"a": ("Maintain a baseline of at least 2 liters per day, potentially increasing based on factors like physical activity and overall health", "Q20", +2),
+         "b": ("Recommend a flexible approach, starting at 1 liter per day and adjusting according to personal health advice and bodily responses", "Q13", -1),
 
-          "b": ("Recommend a flexible approach, starting at 1 liter per day and adjusting according to personal health advice and bodily responses", "Q13", -1),
+         "c": ("Tailor water intake to personal hydration cues and adjust according to specific dietary and exercise regimes", "Q19", +1)},
 
-          "c": ("Tailor water intake to personal hydration cues and adjust according to specific dietary and exercise regimes", "Q19", +1)},
+ "Q13": {"a": ("Focus primarily on animal-based proteins, which are complete sources of all essential amino acids", "Q14", -1),
 
-  "Q13": {"a": ("Focus primarily on animal-based proteins, which are complete sources of all essential amino acids", "Q14", -1),
+         "b": ("Mix of plant-based and animal-based proteins for nutritional diversity", "Q22", +2),
 
-          "b": ("Mix of plant-based and animal-based proteins for nutritional diversity", "Q22", +2),
+         "c": ("Include plant-based proteins predominantly, supplementing with animal-based proteins as needed", "Q21", +1)},
 
-          "c": ("Include plant-based proteins predominantly, supplementing with animal-based proteins as needed", "Q21", +1)},
+ "Q14": {"a": ("Focus primarily on increasing the intake of omega-9 monounsaturated fats, such as those found in olive oil", "Q15", -1),
 
-  "Q14": {"a": ("Focus primarily on increasing the intake of omega-9 monounsaturated fats, such as those found in olive oil", "Q15", -1),
+         "b": ("Limit all forms of dietary fats significantly to reduce calorie intake and prevent fat accumulation", "Q23", +1),
 
-          "b": ("Limit all forms of dietary fats significantly to reduce calorie intake and prevent fat accumulation", "Q23", +1),
+         "c": ("Balance the intake of omega-3 and omega-6 polyunsaturated fats, ensuring a higher proportion of omega-3s from sources like fish and flaxseed", "Q24", +2)},
 
-          "c": ("Balance the intake of omega-3 and omega-6 polyunsaturated fats, ensuring a higher proportion of omega-3s from sources like fish and flaxseed", "Q24", +2)},
+ "Q15": {"a": ("It accelerates the metabolism, leading to rapid weight loss", "Q25", +1),
 
-  "Q15": {"a": ("It accelerates the metabolism, leading to rapid weight loss", "Q25", +1),
+         "b": ("It supports digestive health, promoting satiety and regular bowel movements", "Q26", +2),
 
-          "b": ("It supports digestive health, promoting satiety and regular bowel movements", "Q26", +2),
+         "c": ("It enhances nutrient absorption, ensuring efficient use of consumed calories", "Q16", -1)},
 
-          "c": ("It enhances nutrient absorption, ensuring efficient use of consumed calories", "Q16", -1)},
+ "Q16": {"a": ("By reducing overall caloric intake", "Q27", +2),
 
-  "Q16": {"a": ("By reducing overall caloric intake", "Q27", +2),
+         "b": ("By increasing energy expenditure", "Q26", +1),
 
-          "b": ("By increasing energy expenditure", "Q26", +1),
+         "c": ("By improving metabolic flexibility", "Q17", -1)},
 
-          "c": ("By improving metabolic flexibility", "Q17", -1)},
+ "Q17": {"a": ("Emphasizing the quality of food consumed is more important than the quantity for sustainable weight loss", "Q18", -1),
 
-  "Q17": {"a": ("Emphasizing the quality of food consumed is more important than the quantity for sustainable weight loss", "Q18", -1),
+         "b": ("Effective dieting primarily revolves around strict calorie restriction regardless of nutritional value", "Q28", +2),
 
-          "b": ("Effective dieting primarily revolves around strict calorie restriction regardless of nutritional value", "Q28", +2),
+         "c": ("Short-term dieting approaches can lead to long-term weight management success", "Q28", +1)},
 
-          "c": ("Short-term dieting approaches can lead to long-term weight management success", "Q28", +1)},
+ "Q18": {"a": ("Adopting a fixed calorie limit", "Q19", -1),
 
-  "Q18": {"a": ("Adopting a fixed calorie limit", "Q19", -1),
+         "b": ("Integrating a balance of macronutrients and permit occasional indulgences", "Q30", +2),
 
-          "b": ( "Integrating a balance of macronutrients and permit occasional indulgences", "Q30", +2),
+         "c": ("Focusing primarily on high-protein, low-carb meals to maximise fat loss", "Q29", +1)},
 
-          "c": ("Focusing primarily on high-protein, low-carb meals to maximise fat loss", "Q29", +1)},
+ "Q19": {"a": ("High levels of medium-chain triglycerides (MCTs) for quick energy", "Q20", -1),
 
-  "Q19": {"a": ("High levels of medium-chain triglycerides (MCTs) for quick energy", "Q20", -1),
+         "b": ("High in monounsaturated fats which support heart health", +2),
 
-          "b": ("High in monounsaturated fats which support heart health", +2),
+         "c": ("Rich in saturated fats to increase satiety and reduce hunger", +1)},
 
-          "c": ("Rich in saturated fats to increase satiety and reduce hunger", +1)},
+ "Q20": {"a": ("Creating a system of small, frequent rewards to maintain motivation", "Q21", -1),
 
-  "Q20": {"a": ("Creating a system of small, frequent rewards to maintain motivation", "Q21", -1),
+         "b": ("Establishing a reliable support network for encouragement and accountability", +2),
 
-          "b": ("Establishing a reliable support network for encouragement and accountability", +2),
+         "c": ("Regularly setting and reassessing short-term, achievable goals", +1)},
 
-          "c": ("Regularly setting and reassessing short-term, achievable goals", +1)},
+ "Q21": {"a": ("Adopting a very low-calorie diet", "Q22", -1),
 
-  "Q21": {"a": ("Adopting a very low-calorie diet", "Q22", -1),
+         "b": ("Incorporating moderate physical activity", +1),
 
-          "b": ("Incorporating moderate physical activity", +1),
+         "c": ("Making gradual dietary adjustments", +2)},
 
-          "c": ("Making gradual dietary adjustments", +2)},
+ "Q22": {"a": ("Joining a weight loss clinic", "Q23", -1),
 
-  "Q22": {"a": ("Joining a weight loss clinic", "Q23", -1),
+         "b": ("Starting with light exercise", +2),
 
-          "b": ("Starting with light exercise", +2),
+         "c": ("Starting with cutting all sugars", +1)},
 
-          "c": ("Starting with cutting all sugars", +1)},
+ "Q23": {"a": ("They are preferred as an initial treatment option", "Q24", -1),
 
-  "Q23": {"a": ("They are preferred as an initial treatment option", "Q24", -1),
+         "b": ("They are considered after lifestyle and pharmacological interventions have been attempted", +2),
 
-          "b": ("They are considered after lifestyle and pharmacological interventions have been attempted", +2),
+         "c": ("They are avoided in favor of non-invasive methods", +1)},
 
-          "c": ("They are avoided in favor of non-invasive methods", +1)},
+ "Q24": {"a": ("Increasing protein intake", +1),
 
-  "Q24": {"a": ("Increasing protein intake", +1),
+         "b": ("Eliminating all fats", "Q25", -1),
 
-          "b": ("Eliminating all fats", "Q25", -1),
+         "c": ("Reducing processed foods", +2)},
 
-          "c": ("Reducing processed foods", +2)},
+ "Q25": {"a": ("Eating multiple small meals is necessary", "Q26", -1),
 
-  "Q25": {"a": ("Eating multiple small meals is necessary", "Q26", -1),
+         "b": ("Calorie counting is the only way to lose weight", +1),
 
-          "b": ("Calorie counting is the only way to lose weight", +1),
+         "c": ("Balanced macronutrients are key", +2)},
 
-          "c": ("Balanced macronutrients are key", +2)},
+ "Q26": {"a": ("Integrating comprehensive dietary tracking applications with personalised feedback systems", +2),
 
-  "Q26": {"a": ("Integrating comprehensive dietary tracking applications with personalised feedback systems", +2),
+         "b": ("Minimising screen time and digital device usage to focus on physical activities", "Q27", -1),
 
-          "b": ( "Minimising screen time and digital device usage to focus on physical activities", "Q27", -1),
+         "c": ("Utilising wearable devices exclusively to monitor physical activity levels without considering dietary intake", +1)},
 
-          "c": ("Utilising wearable devices exclusively to monitor physical activity levels without considering dietary intake", +1)},
+ "Q27": {"a": ("They should be used without medical consultation", "Q28", -1),
 
-  "Q27": {"a": ("They should be used without medical consultation", "Q28", -1),
+         "b": ("They are typically for individuals with a BMI exceeding 30", +2),
 
-          "b": ("They are typically for individuals with a BMI exceeding 30", +2),
+         "c": ("They can serve as a substitute for dietary modifications", +1)},
 
-          "c": ("They can serve as a substitute for dietary modifications", +1)},
+ "Q28": {"a": ("Switching to a vegetarian diet", +1),
 
-  "Q28": {"a": ("Switching to a vegetarian diet", +1),
+         "b": ("Gradual increase in physical activity", +2),
 
-          "b": ("Gradual increase in physical activity", +2),
+         "c": ("Frequent fasting periods", "Q29", -1)},
 
-          "c": ("Frequent fasting periods", "Q29", -1)},
+ "Q29": {"a": ("Fats are the main dietary enemy", "Q30", -1),
 
-  "Q29": {"a": ("Fats are the main dietary enemy", "Q30", -1),
+         "b": ("All carbs must be eliminated", +1),
 
-          "b": ("All carbs must be eliminated", +1),
+         "c": ("Protein should be the focus of the diet", +2)},
 
-          "c": ("Protein should be the focus of the diet", +2)},
+ "Q30": {"a": ("Regularly switching diet plans to prevent metabolic adaptation", +1),
 
-  "Q30": {"a": ("Regularly switching diet plans to prevent metabolic adaptation", +1),
+         "b": ( "Adhering to consistent, healthy eating habits", +2),
 
-          "b": ( "Adhering to consistent, healthy eating habits", +2),
-
-          "c": ("Avoiding all social situations involving food to control intake", -1)}
+         "c": ("Avoiding all social situations involving food to control intake", -1)}
 
 }
-
 
 #######################################################################################################################
 
